@@ -1,0 +1,20 @@
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  gap: 1em;
+}
+
+.brand-grid__item {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  padding: 1.5em;
+  background: #fff;
+  border-radius: var(--radius-soft);
+
+  img {
+    max-height: 4.5em;
+    width: auto;
+    object-fit: contain;
+  }
+}

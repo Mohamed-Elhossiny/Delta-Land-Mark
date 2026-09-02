@@ -1,0 +1,69 @@
+<footer class="footer">
+  @if (site$ | async; as site) {
+    <div class="footer__head x-padding" appScrollReveal>
+      <h2 class="display-2">{{ 'footer.ctaTitle' | translate }}</h2>
+      @if (whatsapp$ | async; as wa) {
+        <app-split-cta [label]="'footer.ctaButton' | translate" [href]="wa" [external]="true" />
+      }
+    </div>
+
+    <div class="footer__body x-padding">
+      <div class="footer__cols">
+        <div class="footer__col" appScrollReveal [delay]="40">
+          <h3 class="footer__title">{{ 'footer.quickLinks' | translate }}</h3>
+          <ul>
+            @if (nav$ | async; as nav) {
+              @for (item of nav; track item.id) {
+                <li>
+                  <a [routerLink]="item.path">
+                    <span class="footer__link-text">{{ item.label | localize }}</span>
+                  </a>
+                </li>
+              }
+            }
+            <li>
+              <a routerLink="/integrated-experience">
+                <span class="footer__link-text">{{ 'nav.integratedExperience' | translate }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col" appScrollReveal [delay]="120">
+          <h3 class="footer__title">{{ 'footer.contact' | translate }}</h3>
+          <ul>
+            <li>
+              <a [href]="site.contact.whatsapp" target="_blank" rel="noopener">
+                <span class="footer__link-text">WhatsApp</span>
+              </a>
+            </li>
+            <li>
+              <a [href]="site.contact.maps" target="_blank" rel="noopener">
+                <span class="footer__link-text">{{ 'footer.location' | translate }}</span>
+              </a>
+            </li>
+            <li>
+              <a [href]="site.contact.facebook" target="_blank" rel="noopener">
+                <span class="footer__link-text">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a [href]="'tel:' + site.contact.phone">
+                <span class="footer__link-text">{{ site.contact.phone }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col" appScrollReveal [delay]="200">
+          <h3 class="footer__title">{{ 'footer.address' | translate }}</h3>
+          <p class="footer__address">{{ site.contact.address | localize }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom x-padding">
+      <p>© {{ site.identity.name | localize }} — {{ 'footer.allRightsReserved' | translate }}</p>
+    </div>
+  }
+</footer>

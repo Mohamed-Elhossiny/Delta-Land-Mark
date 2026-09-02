@@ -1,0 +1,16 @@
+.plans {
+  display: grid;
+  gap: 1.5em;
+}
+
+.plans__item {
+  margin: 0;
+  border-radius: var(--radius-soft);
+  overflow: hidden;
+  background: var(--color-bg-muted);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

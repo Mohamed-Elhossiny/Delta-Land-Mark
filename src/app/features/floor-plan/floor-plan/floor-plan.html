@@ -1,0 +1,13 @@
+@if (vm$ | async; as vm) {
+  <app-page-hero [title]="vm.page.title" [imageUrl]="vm.heroImage" />
+
+  <app-section-shell>
+    <div class="plans">
+      @for (image of vm.images; track image.local; let i = $index) {
+        <figure class="plans__item" appScrollReveal [delay]="i * 100">
+          <img [src]="image.src" [alt]="image.alt || ''" />
+        </figure>
+      }
+    </div>
+  </app-section-shell>
+}

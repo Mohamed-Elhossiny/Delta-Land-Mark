@@ -1,0 +1,25 @@
+@if (vm$ | async; as vm) {
+  <app-section-shell>
+    <div class="categories">
+      <div class="categories__copy" appScrollReveal>
+        <h2 class="display-2">{{ vm.section?.title | localize }}</h2>
+        <p class="lead">{{ vm.section?.subtitle | localize }}</p>
+        <ul class="categories__list">
+          @for (item of vm.section?.items ?? []; track item.title.ar) {
+            <li>
+              <strong>{{ item.title | localize }}</strong>
+              @if (item.description) {
+                <span>{{ item.description | localize }}</span>
+              }
+            </li>
+          }
+        </ul>
+      </div>
+      @if (vm.image) {
+        <figure class="categories__media" appScrollReveal [delay]="120">
+          <img [src]="vm.image" alt="" />
+        </figure>
+      }
+    </div>
+  </app-section-shell>
+}

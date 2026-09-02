@@ -1,0 +1,11 @@
+<section
+  class="section"
+  [ngClass]="{
+    'section--gray': tone() === 'gray',
+    'section--warm': tone() === 'warm',
+    'section--dark': tone() === 'dark',
+    'section--padded': padded()
+  }"
+>
+  <ng-content />
+</section>

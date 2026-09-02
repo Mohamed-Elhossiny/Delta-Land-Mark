@@ -1,0 +1,23 @@
+@if (vm$ | async; as vm) {
+  <section class="contact-band" appScrollReveal variant="scale">
+    <div class="contact-band__bg" aria-hidden="true">
+      <img class="contact-band__bg-image" [src]="vm.image" alt="" />
+      <div class="contact-band__overlay"></div>
+      <div class="contact-band__glow"></div>
+    </div>
+
+    <div class="contact-band__content x-padding y-padding">
+      <h2 class="contact-band__title">{{ vm.section?.title | localize }}</h2>
+      <p class="contact-band__subtitle">{{ vm.section?.subtitle | localize }}</p>
+      <div class="contact-band__actions">
+        @for (cta of vm.ctas; track cta.url) {
+          <app-primary-cta
+            [label]="cta.text | localize"
+            [href]="cta.resolvedUrl"
+            [external]="cta.external"
+          />
+        }
+      </div>
+    </div>
+  </section>
+}

@@ -1,0 +1,52 @@
+@if (vm$ | async; as vm) {
+  <section
+    class="hero"
+    [class.hero--paused]="isPaused()"
+    [class.hero--poster]="usePosterFallback()"
+  >
+    <button
+      type="button"
+      class="hero__media-zone"
+      (click)="toggleVideo($event)"
+      [attr.aria-label]="'hero.playToggle' | translate"
+    >
+      @if (!usePosterFallback()) {
+        <video
+          #heroVideo
+          class="hero__media hero__media--video"
+          [poster]="vm.poster"
+          muted
+          loop
+          playsinline
+          preload="auto"
+          (loadeddata)="onVideoReady()"
+          (error)="onVideoError()"
+        >
+          <source [src]="vm.video" type="video/mp4" />
+        </video>
+      } @else {
+        <img class="hero__media hero__media--image" [src]="vm.poster" alt="" />
+      }
+    </button>
+
+    <div class="hero__overlay hero__overlay--top"></div>
+    <div class="hero__overlay hero__overlay--bottom"></div>
+    <div class="hero__overlay hero__overlay--readability"></div>
+
+    <div class="hero__content x-padding" @heroEnter>
+      <p class="hero__eyebrow">{{ 'hero.eyebrow' | translate }}</p>
+      <h1 class="hero__title">{{ 'hero.title' | translate }}</h1>
+
+      <div class="hero__actions">
+        @for (cta of vm.ctas; track cta.url) {
+          <app-primary-cta
+            [label]="cta.text | localize"
+            [href]="cta.resolvedUrl"
+            [external]="cta.external"
+            [variant]="$first ? 'primary' : 'ghost'"
+          />
+        }
+      </div>
+    </div>
+  </section>
+}

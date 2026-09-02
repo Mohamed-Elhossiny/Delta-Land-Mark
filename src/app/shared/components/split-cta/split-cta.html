@@ -1,0 +1,11 @@
+@if (external()) {
+  <a class="split-cta" [href]="href()" target="_blank" rel="noopener noreferrer">
+    <span class="split-cta__label">{{ label() }}</span>
+    <span class="split-cta__arrow" aria-hidden="true">←</span>
+  </a>
+} @else {
+  <a class="split-cta" [routerLink]="href()">
+    <span class="split-cta__label">{{ label() }}</span>
+    <span class="split-cta__arrow" aria-hidden="true">←</span>
+  </a>
+}

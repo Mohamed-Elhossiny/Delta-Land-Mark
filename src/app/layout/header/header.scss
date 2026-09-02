@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  z-index: 300;
+  color: #fff;
+  transition:
+    background var(--dur-brand) var(--ease-brand),
+    color var(--dur-brand) var(--ease-brand),
+    backdrop-filter var(--dur-brand) var(--ease-brand);
+
+  &--solid {
+    background: rgba(20, 11, 6, 0.92);
+    backdrop-filter: blur(8px);
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75em;
+  min-height: var(--header-height);
+}
+
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  img {
+    height: clamp(2.75rem, 3.5em, 3.85rem);
+    width: auto;
+    max-width: none;
+  }
+}
+
+.header__end {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-inline-start: auto;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.header__lang,
+.header__whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--touch-min);
+  min-width: var(--touch-min);
+  padding-inline: 0.85em;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 2em;
+  color: inherit;
+  transition:
+    background var(--dur-brand) var(--ease-brand),
+    transform var(--dur-brand) var(--ease-brand);
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.header__lang:hover,
+.header__whatsapp:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.header__whatsapp {
+  color: var(--color-whatsapp);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.header__burger {
+  width: var(--touch-min);
+  height: var(--touch-min);
+  display: grid;
+  place-content: center;
+  gap: 0.35em;
+  color: inherit;
+}
+
+.header__burger span {
+  display: block;
+  width: 1.35em;
+  height: 2px;
+  background: currentColor;
+  transition: transform var(--dur-brand) var(--ease-brand);
+}
+
+.header--menu-open .header__burger span:first-child {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.header--menu-open .header__burger span:last-child {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+@media (max-width: 640px) {
+  .header__logo img {
+    height: clamp(2.5rem, 3.1em, 3.25rem);
+  }
+
+  .header__lang {
+    font-size: 0.85em;
+    padding-inline: 0.65em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__inner {
+    gap: 1em;
+  }
+
+  .header__logo img {
+    height: clamp(3.25rem, 3.85em, 4.25rem);
+  }
+}

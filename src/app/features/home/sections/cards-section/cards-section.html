@@ -1,0 +1,26 @@
+@if (cards$ | async; as cards) {
+  <app-section-shell tone="warm">
+    <div class="cards">
+      @for (card of cards; track card.title.ar; let i = $index) {
+        <article class="cards__item" appScrollReveal [delay]="i * 90" variant="up">
+          <div class="cards__media" aria-hidden="true">
+            <img class="cards__image" [src]="card.image" alt="" loading="lazy" />
+            <div class="cards__overlay"></div>
+          </div>
+
+          <div class="cards__body">
+            <h3 class="cards__title">{{ card.title | localize }}</h3>
+            <p class="cards__desc">{{ card.description | localize }}</p>
+            @for (cta of card.ctas; track cta.url) {
+              <app-primary-cta
+                [label]="cta.text | localize"
+                [href]="cta.resolvedUrl"
+                [external]="cta.external"
+              />
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </app-section-shell>
+}

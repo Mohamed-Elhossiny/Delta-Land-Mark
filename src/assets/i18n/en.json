@@ -1,0 +1,183 @@
+{
+  "ui": {
+    "nav": {
+      "home": "Home",
+      "brands": "Brands",
+      "floorPlan": "Floor Plan",
+      "photos": "Photos",
+      "integratedExperience": "Integrated Experience"
+    },
+    "header": {
+      "langSwitch": "العربية",
+      "menu": "Menu"
+    },
+    "hero": {
+      "scroll": "Scroll",
+      "eyebrow": "A mixed-use destination in the heart of the Delta",
+      "title": "An integrated experience in a prime strategic location",
+      "playToggle": "Play or pause background video"
+    },
+    "footer": {
+      "ctaTitle": "Start your investment at Delta LandMark",
+      "ctaButton": "Contact us now",
+      "quickLinks": "Quick links",
+      "contact": "Contact",
+      "address": "Address",
+      "location": "Location",
+      "allRightsReserved": "All rights reserved"
+    },
+    "integrated": {
+      "title": "Integrated Experience",
+      "subtitle": "Everything you need in one place"
+    },
+    "cta": {
+      "contactNow": "Contact us now",
+      "viewLocation": "Our location",
+      "facebook": "Facebook page"
+    },
+    "common": {
+      "backToTop": "Back to top"
+    }
+  },
+  "content": {
+    "identity": {
+      "tagline": "A mixed-use destination in the heart of the Delta with commercial, administrative, medical, hospitality, entertainment, and educational units — strategically located on the Cairo–Alexandria agricultural road near Menoufia National University.",
+      "description": "A mixed-use destination in the heart of the Delta with commercial, administrative, medical, hospitality, entertainment, and educational units."
+    },
+    "contact": {
+      "address": "Km 64 Cairo–Alexandria Agricultural Road — next to Menoufia National University"
+    },
+    "pages": {
+      "home": {
+        "sections": [
+          {
+            "type": "hero",
+            "headline": "Delta LandMark delivers an integrated experience combining shopping, dining, entertainment, and services in a prime strategic location — one of the region's most prominent modern commercial landmarks.",
+            "ctas": [
+              { "text": "Facebook page" },
+              { "text": "Mall location" }
+            ]
+          },
+          {
+            "type": "stats",
+            "items": [
+              {
+                "label": "Total project area",
+                "display": "Fifty-two thousand square meters"
+              }
+            ]
+          },
+          {
+            "type": "features",
+            "items": [
+              { "text": "Commercial, entertainment, educational, administrative & medical" },
+              { "text": "High investment appeal thanks to location and traffic flow" },
+              { "text": "Unique competitive edge along the Cairo–Alexandria agricultural road" }
+            ]
+          },
+          {
+            "type": "about",
+            "title": "Delta LandMark",
+            "body": "Delta LandMark brings together leading brands, restaurants, cafés, and diverse services in a modern environment that offers visitors an exceptional experience — with promising opportunities for investors."
+          },
+          {
+            "type": "cards",
+            "items": [
+              {
+                "title": "Strategic location",
+                "description": "Km 64 Cairo–Alexandria Agricultural Road — next to Menoufia National University",
+                "ctas": [{ "text": "Our location" }]
+              },
+              {
+                "title": "Integrated experience",
+                "description": "Everything you need in one place (medical · administrative · entertainment · commercial · hospitality)",
+                "ctas": [{ "text": "Explore project services" }]
+              },
+              {
+                "title": "Commercial mall",
+                "description": "Modern architecture offering a comfortable and engaging shopping experience",
+                "ctas": [{ "text": "View mall photos" }]
+              },
+              {
+                "title": "Floor plan",
+                "description": "Modern planning for a comfortable and attractive visitor journey",
+                "ctas": [{ "text": "View floor plan" }]
+              },
+              {
+                "title": "Brands",
+                "description": "Brands that chose to be part of Delta LandMark",
+                "ctas": [{ "text": "View brands" }]
+              },
+              {
+                "title": "Investment opportunities",
+                "description": "Contact us and start your investment",
+                "ctas": []
+              }
+            ]
+          },
+          {
+            "type": "categories",
+            "title": "Main categories",
+            "subtitle": "Join leading investors and brand owners at Delta LandMark — benefit from a prime location, steady footfall, and a commercial environment built for success.",
+            "items": [
+              { "title": "Shopping" },
+              { "title": "Entertainment" },
+              {
+                "title": "Restaurants & cafés",
+                "description": "Distinctive dining experiences for every taste"
+              }
+            ]
+          },
+          {
+            "type": "contact",
+            "title": "Contact us",
+            "subtitle": "Book your commercial unit",
+            "ctas": [
+              { "text": "Our location" },
+              { "text": "Contact us now" }
+            ]
+          }
+        ]
+      },
+      "integratedExperience": {
+        "sections": [
+          {
+            "id": "commercial",
+            "title": "Commercial",
+            "description": "A diverse mix of leading brands for a complete shopping experience — everything you look for in one place, with quality you deserve."
+          },
+          {
+            "id": "entertainment",
+            "title": "Entertainment",
+            "description": "Entertainment spaces designed for families — a destination that combines shopping and fun in one experience."
+          },
+          {
+            "id": "school",
+            "title": "Education",
+            "description": "A modern learning environment within a thriving community — high-quality education with students' futures at the core."
+          },
+          {
+            "id": "medical",
+            "title": "Medical",
+            "description": "Integrated medical services in a modern, accessible setting — top specialties to meet your health needs efficiently."
+          },
+          {
+            "id": "hotel",
+            "title": "Hospitality",
+            "description": "Comfortable upscale stays combining luxury and accessibility — hospitality for business travelers and visitors alike."
+          }
+        ]
+      },
+      "brands": {
+        "title": "Brands",
+        "subtitle": "Brands that chose Delta LandMark"
+      },
+      "floorPlan": {
+        "title": "Floor plan"
+      },
+      "photos": {
+        "title": "Mall gallery"
+      }
+    }
+  }
+}

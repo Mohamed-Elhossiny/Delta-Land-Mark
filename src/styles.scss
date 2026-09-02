@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-latin: 'Montserrat', 'Segoe UI', sans-serif;
+  --font-arabic: 'Readex Pro', 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+  --font-body: var(--font-arabic);
+
+  --color-bg: #ffffff;
+  --color-bg-muted: #f6f6f6;
+  --color-bg-warm: #fef1e4;
+  --color-bg-inverse: #140b06;
+  --color-fg: #1c0d0a;
+  --color-fg-muted: #353535;
+  --color-fg-on-dark: #ffffff;
+  --color-fg-on-dark-muted: rgba(255, 255, 255, 0.55);
+  --color-primary: #ff6210;
+  --color-primary-hover: #f15808;
+  --color-primary-fg: #ffffff;
+  --color-whatsapp: #08a521;
+  --color-border: #eeeeee;
+  --color-border-on-dark: rgba(255, 255, 255, 0.2);
+
+  --radius-cta: 2em;
+  --radius-soft: 1.111em;
+  --pad-x: 5.55em;
+  --pad-y: 5.55em;
+  --content-max: 90rem;
+  --ease-brand: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-brand: 0.5s;
+  --dur-reveal: 1.05s;
+  --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+  --100svh: 100svh;
+  --100dvh: 100dvh;
+  --fluid-root: clamp(14px, 0.9375vw, 18px);
+  --header-height: 5.25rem;
+  --touch-min: 2.75rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  font-size: var(--fluid-root);
+  overflow-x: clip;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge legacy */
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none; /* Chrome/Safari/Edge */
+}
+
+html[dir='ltr'] {
+  --font-body: var(--font-latin);
+}
+
+body {
+  margin: 0;
+  min-height: var(--100dvh);
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--color-fg);
+  background: var(--color-bg);
+  transition: background var(--dur-brand) var(--ease-brand);
+  overflow-x: clip;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+body.menu-open,
+body.loader-active {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: min(100%, var(--content-max));
+  margin-inline: auto;
+}
+
+.x-padding {
+  padding-inline: var(--pad-x);
+}
+
+.y-padding {
+  padding-block: var(--pad-y);
+}
+
+.gray-bg { background: var(--color-bg-muted); }
+.warm-bg { background: var(--color-bg-warm); }
+.dark-bg { background: var(--color-bg-inverse); color: var(--color-fg-on-dark); }
+
+.display-1 {
+  font-size: clamp(2rem, 4.6em, 5.5rem);
+  line-height: 0.92;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.display-2 {
+  font-size: clamp(1.75rem, 3em, 3.5rem);
+  line-height: 1.02;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.heading-3 {
+  font-size: clamp(1.25rem, 2.22em, 2.5rem);
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.lead {
+  font-size: clamp(0.95rem, 1.11em, 1.25rem);
+  line-height: 1.55;
+  color: var(--color-fg-muted);
+}
+
+.muted { color: var(--color-fg-muted); }
+
+/* Scroll reveal variants */
+.reveal {
+  opacity: 0;
+  transition:
+    opacity var(--dur-reveal) var(--ease-reveal),
+    transform var(--dur-reveal) var(--ease-reveal);
+  will-change: opacity, transform;
+}
+
+.reveal--up { transform: translateY(2.75rem); }
+.reveal--down { transform: translateY(-2.75rem); }
+.reveal--left { transform: translateX(-2.5rem); }
+.reveal--right { transform: translateX(2.5rem); }
+.reveal--scale { transform: scale(0.94) translateY(1.25rem); }
+
+html[dir='rtl'] .reveal--left { transform: translateX(2.5rem); }
+html[dir='rtl'] .reveal--right { transform: translateX(-2.5rem); }
+
+.reveal--visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Lenis smooth scroll helpers */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+html.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+html.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.page-route {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  :root {
+    --pad-x: 2.22em;
+    --pad-y: 4.5em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  :root {
+    --pad-x: 1.25em;
+    --pad-y: 3.5em;
+    --header-height: 4.5rem;
+    --fluid-root: clamp(15px, 4vw, 17px);
+  }
+
+  .display-1 { font-size: clamp(1.85rem, 9vw, 2.75rem); }
+  .display-2 { font-size: clamp(1.5rem, 7vw, 2.25rem); }
+}
+
+/* Large desktops */
+@media (min-width: 1440px) {
+  :root {
+    --content-max: 96rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --pad-x: 6em;
+    --content-max: 100rem;
+  }
+}

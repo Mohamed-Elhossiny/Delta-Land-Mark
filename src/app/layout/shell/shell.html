@@ -1,0 +1,18 @@
+@if (!loaderDone()) {
+  <app-intro-loader (finished)="onLoaderFinished()" />
+}
+
+<app-header
+  [overlay]="heroOverlay()"
+  [menuOpen]="menuOpen()"
+  (toggleMenu)="toggleMenu()"
+/>
+
+<app-burger-menu [open]="menuOpen()" (close)="closeMenu()" />
+
+<main class="shell" [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet" />
+</main>
+
+<app-footer />
+<app-back-to-top />

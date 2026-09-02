@@ -1,0 +1,1844 @@
+{
+  "meta": {
+    "sourceUrl": "https://dev-delta-land-mark.pantheonsite.io/",
+    "scrapedAt": "2026-09-02T11:02:36.242Z",
+    "version": "1.0.0",
+    "wpPages": {
+      "integratedExperience": {
+        "wpId": 1777,
+        "wpSlug": "%d8%aa%d8%ac%d8%b1%d8%a8%d8%a9-%d9%85%d8%aa%d9%83%d8%a7%d9%85%d9%84%d8%a9",
+        "wpTitle": "تجربة متكاملة",
+        "modified": "2026-07-28T14:01:55",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/%d8%aa%d8%ac%d8%b1%d8%a8%d8%a9-%d9%85%d8%aa%d9%83%d8%a7%d9%85%d9%84%d8%a9/"
+      },
+      "photos": {
+        "wpId": 1730,
+        "wpSlug": "photos",
+        "wpTitle": "Photos",
+        "modified": "2026-07-14T10:11:23",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/photos/"
+      },
+      "brands": {
+        "wpId": 1668,
+        "wpSlug": "plane",
+        "wpTitle": "Brands",
+        "modified": "2026-06-23T21:54:11",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/plane/"
+      },
+      "floorPlan": {
+        "wpId": 1655,
+        "wpSlug": "brands",
+        "wpTitle": "Plane",
+        "modified": "2026-07-13T12:03:42",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/brands/"
+      },
+      "home": {
+        "wpId": 398,
+        "wpSlug": "home",
+        "wpTitle": "Home",
+        "modified": "2026-08-15T10:10:43",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/"
+      }
+    },
+    "downloadErrors": [],
+    "stats": {
+      "wpPages": 5,
+      "wpMedia": 157,
+      "uniqueAssetsDownloaded": 157,
+      "brandCount": 7,
+      "floorPlanImages": 2,
+      "photoCount": 4
+    }
+  },
+  "identity": {
+    "name": {
+      "en": "Delta LandMark",
+      "ar": "دلتا لاند مارك"
+    },
+    "tagline": {
+      "ar": "مشروع متعدد الاستخدامات في قلب الدلتا، يضم وحدات تجارية وإدارية وطبية وفندقية وترفيهية وتعليمية، بموقع استراتيجي على طريق القاهرة – الإسكندرية الزراعي بجوار جامعة المنوفية الأهلية."
+    },
+    "description": {
+      "ar": "مشروع متعدد الاستخدامات في قلب الدلتا، يضم وحدات تجارية وإدارية وطبية وفندقية وترفيهية وتعليمية، بموقع استراتيجي على طريق القاهرة – الإسكندرية الزراعي بجوار جامعة المنوفية الأهلية."
+    },
+    "colors": {
+      "primary": "#FF6210",
+      "primaryDark": "#F15808",
+      "textDark": "#1C0D0A",
+      "textMuted": "#353535",
+      "backgroundWarm": "#FEF1E4",
+      "white": "#FFFFFF",
+      "neutral": "#E5D7D1",
+      "backgroundDark": "#140B06",
+      "textSecondary": "#222222"
+    },
+    "fonts": [],
+    "logo": {
+      "local": "assets/identity/001-file.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/لوجو-دلتا.png",
+      "originalFilename": "لوجو-دلتا.png"
+    },
+    "language": "ar",
+    "direction": "rtl"
+  },
+  "contact": {
+    "phone": "012 100 15100",
+    "whatsapp": "https://wa.me/201210015100",
+    "facebook": "https://www.facebook.com/Deltalandmark00",
+    "maps": "https://maps.app.goo.gl/3kNvydmH61fcdRfQ9",
+    "address": {
+      "ar": "ك ٦٤ طريق مصر الاسكندرية الزراعى - بجوار جامعة المنوفية الاهلية"
+    }
+  },
+  "navigation": [
+    {
+      "id": "home",
+      "label": {
+        "ar": "Home",
+        "en": "Home"
+      },
+      "legacyUrl": "/",
+      "path": "/"
+    },
+    {
+      "id": "brands",
+      "label": {
+        "ar": "Brands",
+        "en": "Brands"
+      },
+      "legacyUrl": "/plane/",
+      "path": "/plane/"
+    },
+    {
+      "id": "floorPlan",
+      "label": {
+        "ar": "Plane",
+        "en": "Plane"
+      },
+      "legacyUrl": "/brands/",
+      "path": "/brands/"
+    },
+    {
+      "id": "photos",
+      "label": {
+        "ar": "Photos",
+        "en": "Photos"
+      },
+      "legacyUrl": "/photos/",
+      "path": "/photos/"
+    }
+  ],
+  "pages": {
+    "home": {
+      "sections": [
+        {
+          "type": "hero",
+          "headline": {
+            "ar": "يقدم دلتا لاند مارك تجربة متكاملة تجمع بين التسوق المطاعم، الترفيه، والخدمات في موقع استراتيجي مميز ليكون أحد أبرز المعالم التجارية الحديثة في المنطقة"
+          },
+          "ctas": [
+            {
+              "url": "https://www.facebook.com/Deltalandmark00",
+              "text": {
+                "ar": "صفحة الفيسبوك"
+              }
+            },
+            {
+              "url": "https://maps.app.goo.gl/3kNvydmH61fcdRfQ9",
+              "text": {
+                "ar": "موقع المول"
+              }
+            }
+          ],
+          "images": []
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": {
+                "ar": "المساحة الاجمالية للمشروع"
+              },
+              "value": "52000",
+              "unit": "sqm",
+              "display": {
+                "ar": "اثنان وخمسون ألف مترٍ مربعٍ"
+              }
+            }
+          ]
+        },
+        {
+          "type": "features",
+          "items": [
+            {
+              "text": {
+                "ar": "تجاريه وترفيهيه وتعليميه واداريه وطبيه"
+              }
+            },
+            {
+              "text": {
+                "ar": "فرصة جذب استثماري عالية بسبب الموقع والحركة المرورية"
+              }
+            },
+            {
+              "text": {
+                "ar": "ميزة تنافسية فريدة علي امتداد الطريق القاهره اسكندريه الزراعي"
+              }
+            }
+          ]
+        },
+        {
+          "type": "about",
+          "title": {
+            "ar": "Delta LandMark"
+          },
+          "body": {
+            "ar": "دلتا لاند مارك هو مشروع صُمم ليجمع بين أفضل العلامات التجارية، المطاعم، الكافيهات، والخدمات المتنوعة داخل بيئة عصرية توفر تجربة استثنائية للزوار , فرص متعدده وواعده للمستثمرين"
+          }
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": {
+                "ar": "موقع استراتيجي"
+              },
+              "description": {
+                "ar": "ك ٦٤ طريق مصر الاسكندرية الزراعى - بجوار جامعة المنوفية الاهلية"
+              },
+              "ctas": [
+                {
+                  "url": "https://maps.app.goo.gl/3kNvydmH61fcdRfQ9",
+                  "text": {
+                    "ar": "موقعنا"
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "ar": "تجربة متكاملة"
+              },
+              "description": {
+                "ar": "كل ما تحتاجه في مكان واحد ( طبي - إداري - ترفيهي - تجاري - فندقي )"
+              },
+              "ctas": [
+                {
+                  "url": "https://dev-delta-land-mark.pantheonsite.io/%d8%aa%d8%ac%d8%b1%d8%a8%d8%a9-%d9%85%d8%aa%d9%83%d8%a7%d9%85%d9%84%d8%a9/",
+                  "text": {
+                    "ar": "شاهد خدمات المشروع"
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "ar": "مول تجاري"
+              },
+              "description": {
+                "ar": "تصميم معماري حديث يوفر تجربه تسويقيه مريحيه وجذابه"
+              },
+              "ctas": [
+                {
+                  "url": "https://dev-delta-land-mark.pantheonsite.io/photos/",
+                  "text": {
+                    "ar": "شاهد صور المول"
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "ar": "المخطط الهندسي"
+              },
+              "description": {
+                "ar": "تخطيط هندسي حديث يوفر تجربة مريحة وجذابة"
+              },
+              "ctas": [
+                {
+                  "url": "https://dev-delta-land-mark.pantheonsite.io/brands/",
+                  "text": {
+                    "ar": "شاهد المخطط"
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "ar": "البراندات"
+              },
+              "description": {
+                "ar": "براندات اختارت تواجدها في دلتا لاند مارك"
+              },
+              "ctas": [
+                {
+                  "url": "https://dev-delta-land-mark.pantheonsite.io/plane/",
+                  "text": {
+                    "ar": "البراندات"
+                  }
+                }
+              ]
+            },
+            {
+              "title": {
+                "ar": "فرص استثمارية"
+              },
+              "description": {
+                "ar": "تواصل معنا وادأ استثمارك"
+              },
+              "ctas": []
+            }
+          ]
+        },
+        {
+          "type": "categories",
+          "title": {
+            "ar": "الأقسام الرئيسية"
+          },
+          "subtitle": {
+            "ar": "انضم إلى نخبة المستثمرين وأصحاب العلامات التجارية داخل دلتا لاند مارك واستفد من موقع متميز، حركة زوار مستمرة، وبيئة تجارية مصممة لتحقيق النجاح"
+          },
+          "items": [
+            {
+              "title": {
+                "ar": "التسوق"
+              }
+            },
+            {
+              "title": {
+                "ar": "الترفيه"
+              }
+            },
+            {
+              "title": {
+                "ar": "المطاعم والكافيهات"
+              },
+              "description": {
+                "ar": "تجارب طعام مميزة تناسب جميع الأذواق"
+              }
+            }
+          ],
+          "images": [
+            {
+              "local": "assets/home/002-Whisk_36153d35fd8c943ac1244c9087a6f7eadr.png",
+              "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Whisk_36153d35fd8c943ac1244c9087a6f7eadr.png",
+              "originalFilename": "Whisk_36153d35fd8c943ac1244c9087a6f7eadr.png",
+              "alt": "whisk 36153d35fd8c943ac1244c9087a6f7eadr"
+            }
+          ]
+        },
+        {
+          "type": "contact",
+          "title": {
+            "ar": "تواصل معنا"
+          },
+          "subtitle": {
+            "ar": "احجز وحدتك التجارية"
+          },
+          "ctas": [
+            {
+              "url": "https://maps.app.goo.gl/3kNvydmH61fcdRfQ9",
+              "text": {
+                "ar": "موقعنا"
+              }
+            },
+            {
+              "url": "https://wa.me/201210015100",
+              "text": {
+                "ar": "تواصل معنا الان"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "integratedExperience": {
+      "slug": "تجربة-متكاملة",
+      "legacyUrl": "/%d8%aa%d8%ac%d8%b1%d8%a8%d8%a9-%d9%85%d8%aa%d9%83%d8%a7%d9%85%d9%84%d8%a9/",
+      "wpMeta": {
+        "wpId": 1777,
+        "wpSlug": "%d8%aa%d8%ac%d8%b1%d8%a8%d8%a9-%d9%85%d8%aa%d9%83%d8%a7%d9%85%d9%84%d8%a9",
+        "wpTitle": "تجربة متكاملة",
+        "modified": "2026-07-28T14:01:55",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/%d8%aa%d8%ac%d8%b1%d8%a8%d8%a9-%d9%85%d8%aa%d9%83%d8%a7%d9%85%d9%84%d8%a9/"
+      },
+      "sections": [
+        {
+          "id": "commercial",
+          "title": {
+            "ar": "تجاري"
+          },
+          "description": {
+            "ar": "مجموعة متنوعة من أشهر العلامات التجارية لتجربة تسوق متكاملة تلبي جميع احتياجاتك كل ما تبحث عنه في مكان واحد وبجودة تليق بك"
+          },
+          "image": {
+            "local": "assets/integrated-experience/003-file.png",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/ببي.png",
+            "originalFilename": "ببي.png"
+          }
+        },
+        {
+          "id": "entertainment",
+          "title": {
+            "ar": "ترفيهي"
+          },
+          "description": {
+            "ar": "مساحات ترفيهية مصممة لتمنح جميع أفراد الأسرة أوقاتًا مليئة بالمرح وجهة تجمع بين التسوق والترفيه في تجربة واحدة"
+          },
+          "image": {
+            "local": "assets/integrated-experience/004-Screenshot-2026-07-13-150255.png",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Screenshot-2026-07-13-150255.png",
+            "originalFilename": "Screenshot-2026-07-13-150255.png"
+          }
+        },
+        {
+          "id": "school",
+          "title": {
+            "ar": "مدرسة"
+          },
+          "description": {
+            "ar": "بيئة تعليمية حديثة توفر تجربة تعليم متكاملة داخل مجتمع متطور تعليم عالي الجودة يضع مستقبل الطلاب في مقدمة أولوياته"
+          },
+          "image": {
+            "local": "assets/integrated-experience/005-Continue_the_scene_Arabic_text_202607141328.jpeg",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Continue_the_scene_Arabic_text_202607141328.jpeg",
+            "originalFilename": "Continue_the_scene_Arabic_text_202607141328.jpeg"
+          }
+        },
+        {
+          "id": "medical",
+          "title": {
+            "ar": "طبي"
+          },
+          "description": {
+            "ar": "خدمات طبية متكاملة داخل بيئة حديثة توفر الراحة وسهولة الوصول نخبة من التخصصات لتلبية احتياجاتك الصحية بكفاءة"
+          },
+          "image": {
+            "local": "assets/integrated-experience/006-Empty_cinema_interior_scene_2K_202607141307-scaled.jpeg",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Empty_cinema_interior_scene_2K_202607141307-scaled.jpeg",
+            "originalFilename": "Empty_cinema_interior_scene_2K_202607141307-scaled.jpeg"
+          }
+        },
+        {
+          "id": "hotel",
+          "title": {
+            "ar": "فندقي"
+          },
+          "description": {
+            "ar": "إقامة مريحة بمستوى راقٍ تجمع بين الفخامة وسهولة الوصول تجربة ضيافة متكاملة تلائم رجال الأعمال والزوار"
+          },
+          "image": {
+            "local": "assets/integrated-experience/007-Empty_open-air_wedding_hall_2K_202607141309-scaled.jpeg",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Empty_open-air_wedding_hall_2K_202607141309-scaled.jpeg",
+            "originalFilename": "Empty_open-air_wedding_hall_2K_202607141309-scaled.jpeg"
+          }
+        }
+      ]
+    },
+    "brands": {
+      "legacyUrl": "/plane/",
+      "wpMeta": {
+        "wpId": 1668,
+        "wpSlug": "plane",
+        "wpTitle": "Brands",
+        "modified": "2026-06-23T21:54:11",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/plane/"
+      },
+      "title": {
+        "ar": "البراندات"
+      },
+      "subtitle": {
+        "ar": "براندات اختارت دلتا لاند مارك"
+      },
+      "items": [
+        {
+          "name": "4000db d90ecb3545ec426f8b563a7bba0898famv2 scaled",
+          "logo": {
+            "local": "assets/brands/008-4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
+            "originalFilename": "4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
+            "alt": "4000db d90ecb3545ec426f8b563a7bba0898fa~mv2"
+          }
+        },
+        {
+          "name": "preview 928x522 1",
+          "logo": {
+            "local": "assets/brands/009-preview-928x522-1.jpg",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/preview-928x522-1.jpg",
+            "originalFilename": "preview-928x522-1.jpg",
+            "alt": "preview 928×522"
+          }
+        },
+        {
+          "name": "10 3f88e0ce 11b7 4a85 99fb b0d0ac3e9b6f e",
+          "logo": {
+            "local": "assets/brands/010-10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
+            "originalFilename": "10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
+            "alt": "10 3f88e0ce 11b7 4a85 99fb b0d0ac3e9b6f"
+          }
+        },
+        {
+          "name": "44027548   n 98818c77 464e 4c63 84a3 95a7b4730846",
+          "logo": {
+            "local": "assets/brands/011-44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
+            "originalFilename": "44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
+            "alt": "44027548 2201662006513500 1850313580889505792 n 98818c77 464e 4c63 84a3 95a7b4730846"
+          }
+        },
+        {
+          "name": "acdb06c9 6c7b 46c9 98b8 7ed1197d2dbc",
+          "logo": {
+            "local": "assets/brands/012-acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
+            "originalFilename": "acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
+            "alt": "acdb06c9 6c7b 46c9 98b8 7ed1197d2dbc"
+          }
+        },
+        {
+          "name": "Auto Samir Rayan 15144 372x400 1",
+          "logo": {
+            "local": "assets/brands/013-Auto-Samir-Rayan-15144-372x400-1.png",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Auto-Samir-Rayan-15144-372x400-1.png",
+            "originalFilename": "Auto-Samir-Rayan-15144-372x400-1.png",
+            "alt": "auto samir rayan 15144 372×400"
+          }
+        },
+        {
+          "name": "485304498   n e",
+          "logo": {
+            "local": "assets/brands/014-485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
+            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
+            "originalFilename": "485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
+            "alt": "485304498 9316545665094427 1108248781534278428 n"
+          }
+        }
+      ]
+    },
+    "floorPlan": {
+      "legacyUrl": "/brands/",
+      "wpMeta": {
+        "wpId": 1655,
+        "wpSlug": "brands",
+        "wpTitle": "Plane",
+        "modified": "2026-07-13T12:03:42",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/brands/"
+      },
+      "title": {
+        "ar": "المخطط الهندسي"
+      },
+      "images": [
+        {
+          "local": "assets/floor-plan/015-Screenshot-2026-06-24-005729.png",
+          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Screenshot-2026-06-24-005729.png",
+          "originalFilename": "Screenshot-2026-06-24-005729.png",
+          "alt": "screenshot 2026 06 24 005729"
+        },
+        {
+          "local": "assets/floor-plan/016-Screenshot-2026-06-24-005707.png",
+          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Screenshot-2026-06-24-005707.png",
+          "originalFilename": "Screenshot-2026-06-24-005707.png",
+          "alt": "screenshot 2026 06 24 005707"
+        }
+      ]
+    },
+    "photos": {
+      "legacyUrl": "/photos/",
+      "wpMeta": {
+        "wpId": 1730,
+        "wpSlug": "photos",
+        "wpTitle": "Photos",
+        "modified": "2026-07-14T10:11:23",
+        "link": "https://dev-delta-land-mark.pantheonsite.io/photos/"
+      },
+      "title": {
+        "ar": "لقطات من المول"
+      },
+      "gallery": [
+        {
+          "local": "assets/photos/017-0-1.png",
+          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/0-1.png",
+          "originalFilename": "0-1.png",
+          "alt": "0 1"
+        },
+        {
+          "local": "assets/photos/018-Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
+          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
+          "originalFilename": "Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
+          "alt": "whisk 36153d35fd8c943ac1244c9087a6f7eadr"
+        },
+        {
+          "local": "assets/photos/019-IMG20260228160000-scaled.jpg",
+          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/IMG20260228160000-scaled.jpg",
+          "originalFilename": "IMG20260228160000-scaled.jpg",
+          "alt": "oplus_32"
+        },
+        {
+          "local": "assets/photos/020-69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
+          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
+          "originalFilename": "69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
+          "alt": "69bca5e3 0f13 4437 8cf5 4888b20d84a0"
+        }
+      ]
+    }
+  },
+  "mediaIndex": [
+    {
+      "id": 1875,
+      "category": "misc",
+      "local": "assets/integrated-experience/003-file.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/ببي.png",
+      "originalFilename": "ببي.png",
+      "title": "ببي"
+    },
+    {
+      "id": 1874,
+      "category": "misc",
+      "local": "assets/misc/021-Artboard-1-copy-9-scaled.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Artboard-1-copy-9-scaled.png",
+      "originalFilename": "Artboard-1-copy-9-scaled.png",
+      "title": "artboard 1 copy 9"
+    },
+    {
+      "id": 1866,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/022-exterior-view-of-the-sign-at-the-front-of-a-hotel.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/exterior-view-of-the-sign-at-the-front-of-a-hotel.jpg",
+      "originalFilename": "exterior-view-of-the-sign-at-the-front-of-a-hotel.jpg",
+      "title": "exterior view of the sign at the front of a hotel"
+    },
+    {
+      "id": 1865,
+      "category": "misc",
+      "local": "assets/misc/023-295ffd3a54bd51fc33810ce59382d1da.webp",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/295ffd3a54bd51fc33810ce59382d1da.webp",
+      "originalFilename": "295ffd3a54bd51fc33810ce59382d1da.webp",
+      "title": "295ffd3a54bd51fc33810ce59382d1da"
+    },
+    {
+      "id": 1856,
+      "category": "misc",
+      "local": "assets/integrated-experience/005-Continue_the_scene_Arabic_text_202607141328.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Continue_the_scene_Arabic_text_202607141328.jpeg",
+      "originalFilename": "Continue_the_scene_Arabic_text_202607141328.jpeg",
+      "title": "continue the scene arabic text 202607141328"
+    },
+    {
+      "id": 1855,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/024-Notebook_in_school_classroom_202607141321.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Notebook_in_school_classroom_202607141321.jpeg",
+      "originalFilename": "Notebook_in_school_classroom_202607141321.jpeg",
+      "title": "notebook in school classroom 202607141321"
+    },
+    {
+      "id": 1854,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/025-Empty_classroom_in_school_202607141319.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Empty_classroom_in_school_202607141319.jpeg",
+      "originalFilename": "Empty_classroom_in_school_202607141319.jpeg",
+      "title": "empty classroom in school 202607141319"
+    },
+    {
+      "id": 1853,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/026-Empty_hospital_room_white_blue_202607141312-scaled.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Empty_hospital_room_white_blue_202607141312-scaled.jpeg",
+      "originalFilename": "Empty_hospital_room_white_blue_202607141312-scaled.jpeg",
+      "title": "empty hospital room white blue 202607141312"
+    },
+    {
+      "id": 1848,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/007-Empty_open-air_wedding_hall_2K_202607141309-scaled.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Empty_open-air_wedding_hall_2K_202607141309-scaled.jpeg",
+      "originalFilename": "Empty_open-air_wedding_hall_2K_202607141309-scaled.jpeg",
+      "title": "empty open air wedding hall 2k 202607141309"
+    },
+    {
+      "id": 1847,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/027-Empty_open-air_wedding_hall_2K_202607141308-scaled.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Empty_open-air_wedding_hall_2K_202607141308-scaled.jpeg",
+      "originalFilename": "Empty_open-air_wedding_hall_2K_202607141308-scaled.jpeg",
+      "title": "empty open air wedding hall 2k 202607141308"
+    },
+    {
+      "id": 1846,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/006-Empty_cinema_interior_scene_2K_202607141307-scaled.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Empty_cinema_interior_scene_2K_202607141307-scaled.jpeg",
+      "originalFilename": "Empty_cinema_interior_scene_2K_202607141307-scaled.jpeg",
+      "title": "empty cinema interior scene 2k 202607141307"
+    },
+    {
+      "id": 1830,
+      "category": "misc",
+      "local": "assets/misc/028-Screenshot-2026-07-13-150255-1.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Screenshot-2026-07-13-150255-1.png",
+      "originalFilename": "Screenshot-2026-07-13-150255-1.png",
+      "title": "screenshot 2026 07 13 150255"
+    },
+    {
+      "id": 1829,
+      "category": "photos",
+      "local": "assets/photos/020-69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
+      "originalFilename": "69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
+      "title": "69bca5e3 0f13 4437 8cf5 4888b20d84a0"
+    },
+    {
+      "id": 1822,
+      "category": "misc",
+      "local": "assets/integrated-experience/004-Screenshot-2026-07-13-150255.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Screenshot-2026-07-13-150255.png",
+      "originalFilename": "Screenshot-2026-07-13-150255.png",
+      "title": "screenshot 2026 07 13 150255"
+    },
+    {
+      "id": 1808,
+      "category": "misc",
+      "local": "assets/misc/029-pngtree-engineering-architecture-drawings-draft-calculator-diagram-photo-image_1400.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pngtree-engineering-architecture-drawings-draft-calculator-diagram-photo-image_1400.jpg",
+      "originalFilename": "pngtree-engineering-architecture-drawings-draft-calculator-diagram-photo-image_1400.jpg",
+      "title": "pngtree engineering architecture drawings draft calculator diagram photo image 1400"
+    },
+    {
+      "id": 1801,
+      "category": "misc",
+      "local": "assets/misc/030-3-scaled.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/مشهد-سي-3-scaled.jpg",
+      "originalFilename": "مشهد-سي-3-scaled.jpg",
+      "title": "مشهد سي"
+    },
+    {
+      "id": 1800,
+      "category": "misc",
+      "local": "assets/misc/031-images.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/images.jpg",
+      "originalFilename": "images.jpg",
+      "title": "images"
+    },
+    {
+      "id": 1799,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/032-leonardohotelbucharestcitycenter_room_comfortdouble2_2022_4000x2600_7e18f254bc75491965d36cc312e8111f-scaled.avif",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/leonardohotelbucharestcitycenter_room_comfortdouble2_2022_4000x2600_7e18f254bc75491965d36cc312e8111f-scaled.avif",
+      "originalFilename": "leonardohotelbucharestcitycenter_room_comfortdouble2_2022_4000x2600_7e18f254bc75491965d36cc312e8111f-scaled.avif",
+      "title": "leonardohotelbucharestcitycenter room comfortdouble2 2022 4000&#215;2600 7e18f254bc75491965d36cc312e8111f"
+    },
+    {
+      "id": 1798,
+      "category": "misc",
+      "local": "assets/misc/033-_-_-_2K_202606271244-scaled.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/تشطيب_لهذا_المبني_2K_202606271244-scaled.jpeg",
+      "originalFilename": "تشطيب_لهذا_المبني_2K_202606271244-scaled.jpeg",
+      "title": "تشطيب لهذا المبني 2k 202606271244"
+    },
+    {
+      "id": 1796,
+      "category": "integrated-experience",
+      "local": "assets/integrated-experience/034-.png_202606271243.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/مدرسة.png_202606271243.jpeg",
+      "originalFilename": "مدرسة.png_202606271243.jpeg",
+      "title": "مدرسة.png 202606271243"
+    },
+    {
+      "id": 1795,
+      "category": "misc",
+      "local": "assets/misc/035-_-.png_202606271243.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/حديقة_حيوان.png_202606271243.jpeg",
+      "originalFilename": "حديقة_حيوان.png_202606271243.jpeg",
+      "title": "حديقة حيوان.png 202606271243"
+    },
+    {
+      "id": 1794,
+      "category": "misc",
+      "local": "assets/misc/036-.png_202606271243.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/ملعب.png_202606271243.jpeg",
+      "originalFilename": "ملعب.png_202606271243.jpeg",
+      "title": "ملعب.png 202606271243"
+    },
+    {
+      "id": 1787,
+      "category": "home",
+      "local": "assets/home/037-pic-4-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-4-1.jpg",
+      "originalFilename": "pic-4-1.jpg",
+      "title": "pic 4.jpg"
+    },
+    {
+      "id": 1786,
+      "category": "home",
+      "local": "assets/home/038-Project-4.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Project-4.jpg",
+      "originalFilename": "Project-4.jpg",
+      "title": "project 4.jpg"
+    },
+    {
+      "id": 1785,
+      "category": "home",
+      "local": "assets/home/039-Project-3.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Project-3.jpg",
+      "originalFilename": "Project-3.jpg",
+      "title": "project 3.jpg"
+    },
+    {
+      "id": 1784,
+      "category": "home",
+      "local": "assets/home/040-Project-2.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Project-2.jpg",
+      "originalFilename": "Project-2.jpg",
+      "title": "project 2.jpg"
+    },
+    {
+      "id": 1783,
+      "category": "home",
+      "local": "assets/home/041-Pic-21.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Pic-21.jpg",
+      "originalFilename": "Pic-21.jpg",
+      "title": "pic 21.jpg"
+    },
+    {
+      "id": 1761,
+      "category": "photos",
+      "local": "assets/photos/042-IMG20260228155409-scaled.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/IMG20260228155409-scaled.jpg",
+      "originalFilename": "IMG20260228155409-scaled.jpg",
+      "title": "oplus 32"
+    },
+    {
+      "id": 1760,
+      "category": "photos",
+      "local": "assets/photos/043-IMG20260228160016-scaled.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/IMG20260228160016-scaled.jpg",
+      "originalFilename": "IMG20260228160016-scaled.jpg",
+      "title": "oplus 32"
+    },
+    {
+      "id": 1759,
+      "category": "photos",
+      "local": "assets/photos/019-IMG20260228160000-scaled.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/IMG20260228160000-scaled.jpg",
+      "originalFilename": "IMG20260228160000-scaled.jpg",
+      "title": "oplus 32"
+    },
+    {
+      "id": 1758,
+      "category": "photos",
+      "local": "assets/photos/018-Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
+      "originalFilename": "Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
+      "title": "whisk 36153d35fd8c943ac1244c9087a6f7eadr"
+    },
+    {
+      "id": 1757,
+      "category": "photos",
+      "local": "assets/photos/044-Whisk_bdb3a72ebd8890ab0e943a9b7466a884dr.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Whisk_bdb3a72ebd8890ab0e943a9b7466a884dr.png",
+      "originalFilename": "Whisk_bdb3a72ebd8890ab0e943a9b7466a884dr.png",
+      "title": "whisk bdb3a72ebd8890ab0e943a9b7466a884dr"
+    },
+    {
+      "id": 1755,
+      "category": "photos",
+      "local": "assets/photos/017-0-1.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/0-1.png",
+      "originalFilename": "0-1.png",
+      "title": ""
+    },
+    {
+      "id": 1754,
+      "category": "misc",
+      "local": "assets/misc/045-image-22.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-22.jpg",
+      "originalFilename": "image-22.jpg",
+      "title": "image 22.jpg"
+    },
+    {
+      "id": 1753,
+      "category": "misc",
+      "local": "assets/misc/046-image-21.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-21.jpg",
+      "originalFilename": "image-21.jpg",
+      "title": "image 21.jpg"
+    },
+    {
+      "id": 1752,
+      "category": "misc",
+      "local": "assets/misc/047-image-14.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-14.jpg",
+      "originalFilename": "image-14.jpg",
+      "title": "image 14.jpg"
+    },
+    {
+      "id": 1751,
+      "category": "misc",
+      "local": "assets/misc/048-image-10.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-10.jpg",
+      "originalFilename": "image-10.jpg",
+      "title": "image 10.jpg"
+    },
+    {
+      "id": 1750,
+      "category": "misc",
+      "local": "assets/misc/049-image-7.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-7.jpg",
+      "originalFilename": "image-7.jpg",
+      "title": "image 7.jpg"
+    },
+    {
+      "id": 1749,
+      "category": "misc",
+      "local": "assets/misc/050-image-19.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-19.jpg",
+      "originalFilename": "image-19.jpg",
+      "title": "image 19.jpg"
+    },
+    {
+      "id": 1748,
+      "category": "misc",
+      "local": "assets/misc/051-image-17.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-17.jpg",
+      "originalFilename": "image-17.jpg",
+      "title": "image 17.jpg"
+    },
+    {
+      "id": 1747,
+      "category": "misc",
+      "local": "assets/misc/052-image-13.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-13.jpg",
+      "originalFilename": "image-13.jpg",
+      "title": "image 13.jpg"
+    },
+    {
+      "id": 1746,
+      "category": "misc",
+      "local": "assets/misc/053-image-20.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-20.jpg",
+      "originalFilename": "image-20.jpg",
+      "title": "image 20.jpg"
+    },
+    {
+      "id": 1745,
+      "category": "misc",
+      "local": "assets/misc/054-image-18.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-18.jpg",
+      "originalFilename": "image-18.jpg",
+      "title": "image 18.jpg"
+    },
+    {
+      "id": 1744,
+      "category": "misc",
+      "local": "assets/misc/055-image-16.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-16.jpg",
+      "originalFilename": "image-16.jpg",
+      "title": "image 16.jpg"
+    },
+    {
+      "id": 1743,
+      "category": "misc",
+      "local": "assets/misc/056-image-15.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/image-15.jpg",
+      "originalFilename": "image-15.jpg",
+      "title": "image 15.jpg"
+    },
+    {
+      "id": 1709,
+      "category": "floor-plan",
+      "local": "assets/floor-plan/016-Screenshot-2026-06-24-005707.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Screenshot-2026-06-24-005707.png",
+      "originalFilename": "Screenshot-2026-06-24-005707.png",
+      "title": "screenshot 2026 06 24 005707"
+    },
+    {
+      "id": 1708,
+      "category": "floor-plan",
+      "local": "assets/floor-plan/015-Screenshot-2026-06-24-005729.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Screenshot-2026-06-24-005729.png",
+      "originalFilename": "Screenshot-2026-06-24-005729.png",
+      "title": "screenshot 2026 06 24 005729"
+    },
+    {
+      "id": 1706,
+      "category": "floor-plan",
+      "local": "assets/floor-plan/057-FIRST-FLOOR-PLAN-1.pdf",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/FIRST-FLOOR-PLAN-1.pdf",
+      "originalFilename": "FIRST-FLOOR-PLAN-1.pdf",
+      "title": "FIRST FLOOR PLAN"
+    },
+    {
+      "id": 1705,
+      "category": "floor-plan",
+      "local": "assets/floor-plan/058-FIRST-FLOOR-PLAN.pdf",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/FIRST-FLOOR-PLAN.pdf",
+      "originalFilename": "FIRST-FLOOR-PLAN.pdf",
+      "title": "FIRST FLOOR PLAN"
+    },
+    {
+      "id": 1695,
+      "category": "photos",
+      "local": "assets/photos/059-Whisk_udnzmwymj2n4yjm40snlrtytazm3qtlhbtoi1so.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Whisk_udnzmwymj2n4yjm40snlrtytazm3qtlhbtoi1so.png",
+      "originalFilename": "Whisk_udnzmwymj2n4yjm40snlrtytazm3qtlhbtoi1so.png",
+      "title": "whisk udnzmwymj2n4yjm40snlrtytazm3qtlhbtoi1so"
+    },
+    {
+      "id": 1694,
+      "category": "misc",
+      "local": "assets/misc/060-343942944_6022135717841868_4271663835453477052_n.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/343942944_6022135717841868_4271663835453477052_n.jpg",
+      "originalFilename": "343942944_6022135717841868_4271663835453477052_n.jpg",
+      "title": "343942944 6022135717841868 4271663835453477052 n"
+    },
+    {
+      "id": 1693,
+      "category": "misc",
+      "local": "assets/brands/014-485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
+      "originalFilename": "485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
+      "title": "485304498 9316545665094427 1108248781534278428 n"
+    },
+    {
+      "id": 1692,
+      "category": "identity",
+      "local": "assets/identity/061-molo_broast_logo-removebg-preview-logo-1758716758.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/molo_broast_logo-removebg-preview-logo-1758716758.png",
+      "originalFilename": "molo_broast_logo-removebg-preview-logo-1758716758.png",
+      "title": "molo broast logo removebg preview logo 1758716758"
+    },
+    {
+      "id": 1691,
+      "category": "identity",
+      "local": "assets/identity/062-clogo_2018-11-11-10-02-56_X0RalgWlvPJBaXStpNJqBgXX.webp",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/clogo_2018-11-11-10-02-56_X0RalgWlvPJBaXStpNJqBgXX.webp",
+      "originalFilename": "clogo_2018-11-11-10-02-56_X0RalgWlvPJBaXStpNJqBgXX.webp",
+      "title": "clogo 2018 11 11 10 02 56 x0ralgwlvpjbaxstpnjqbgxx"
+    },
+    {
+      "id": 1690,
+      "category": "brands",
+      "local": "assets/brands/013-Auto-Samir-Rayan-15144-372x400-1.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Auto-Samir-Rayan-15144-372x400-1.png",
+      "originalFilename": "Auto-Samir-Rayan-15144-372x400-1.png",
+      "title": "auto samir rayan 15144 372&#215;400"
+    },
+    {
+      "id": 1689,
+      "category": "misc",
+      "local": "assets/brands/012-acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
+      "originalFilename": "acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
+      "title": "acdb06c9 6c7b 46c9 98b8 7ed1197d2dbc"
+    },
+    {
+      "id": 1688,
+      "category": "misc",
+      "local": "assets/misc/063-462801883_2573913929460981_2238285457687303308_n.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/462801883_2573913929460981_2238285457687303308_n.jpg",
+      "originalFilename": "462801883_2573913929460981_2238285457687303308_n.jpg",
+      "title": "462801883 2573913929460981 2238285457687303308 n"
+    },
+    {
+      "id": 1687,
+      "category": "misc",
+      "local": "assets/brands/011-44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
+      "originalFilename": "44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
+      "title": "44027548 2201662006513500 1850313580889505792 n 98818c77 464e 4c63 84a3 95a7b4730846"
+    },
+    {
+      "id": 1686,
+      "category": "misc",
+      "local": "assets/brands/010-10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
+      "originalFilename": "10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
+      "title": "10 3f88e0ce 11b7 4a85 99fb b0d0ac3e9b6f"
+    },
+    {
+      "id": 1685,
+      "category": "misc",
+      "local": "assets/brands/009-preview-928x522-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/preview-928x522-1.jpg",
+      "originalFilename": "preview-928x522-1.jpg",
+      "title": "preview 928&#215;522"
+    },
+    {
+      "id": 1684,
+      "category": "identity",
+      "local": "assets/identity/064-new_logo000000_-17.webp",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/new_logo000000_-17.webp",
+      "originalFilename": "new_logo000000_-17.webp",
+      "title": "new logo000000 17"
+    },
+    {
+      "id": 1683,
+      "category": "misc",
+      "local": "assets/brands/008-4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
+      "originalFilename": "4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
+      "title": "4000db d90ecb3545ec426f8b563a7bba0898fa~mv2"
+    },
+    {
+      "id": 1682,
+      "category": "home",
+      "local": "assets/home/065-pic-4.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-4.jpg",
+      "originalFilename": "pic-4.jpg",
+      "title": "pic 4.jpg"
+    },
+    {
+      "id": 1681,
+      "category": "home",
+      "local": "assets/home/066-pic-5.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-5.jpg",
+      "originalFilename": "pic-5.jpg",
+      "title": "pic 5.jpg"
+    },
+    {
+      "id": 1680,
+      "category": "home",
+      "local": "assets/home/067-pic-6-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-6-1.jpg",
+      "originalFilename": "pic-6-1.jpg",
+      "title": "pic 6.jpg"
+    },
+    {
+      "id": 1679,
+      "category": "misc",
+      "local": "assets/misc/068-Post-1-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-1-1.jpg",
+      "originalFilename": "Post-1-1.jpg",
+      "title": "post 1.jpg"
+    },
+    {
+      "id": 1678,
+      "category": "misc",
+      "local": "assets/misc/069-Post-3-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-3-1.jpg",
+      "originalFilename": "Post-3-1.jpg",
+      "title": "post 3.jpg"
+    },
+    {
+      "id": 1677,
+      "category": "misc",
+      "local": "assets/misc/070-Post-2-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-2-1.jpg",
+      "originalFilename": "Post-2-1.jpg",
+      "title": "post 2.jpg"
+    },
+    {
+      "id": 1676,
+      "category": "misc",
+      "local": "assets/misc/071-Post-4-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-4-1.jpg",
+      "originalFilename": "Post-4-1.jpg",
+      "title": "post 4.jpg"
+    },
+    {
+      "id": 1675,
+      "category": "misc",
+      "local": "assets/misc/072-Post-6.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-6.jpg",
+      "originalFilename": "Post-6.jpg",
+      "title": "post 6.jpg"
+    },
+    {
+      "id": 1674,
+      "category": "misc",
+      "local": "assets/misc/073-Post-5-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-5-1.jpg",
+      "originalFilename": "Post-5-1.jpg",
+      "title": "post 5.jpg"
+    },
+    {
+      "id": 1673,
+      "category": "home",
+      "local": "assets/home/074-pic-2.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-2.jpg",
+      "originalFilename": "pic-2.jpg",
+      "title": "pic 2.jpg"
+    },
+    {
+      "id": 1664,
+      "category": "home",
+      "local": "assets/home/075-Pic-45.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Pic-45.jpg",
+      "originalFilename": "Pic-45.jpg",
+      "title": "pic 45.jpg"
+    },
+    {
+      "id": 1663,
+      "category": "home",
+      "local": "assets/home/076-Pic-42.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Pic-42.jpg",
+      "originalFilename": "Pic-42.jpg",
+      "title": "pic 42.jpg"
+    },
+    {
+      "id": 1662,
+      "category": "home",
+      "local": "assets/home/077-Pic-44.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Pic-44.jpg",
+      "originalFilename": "Pic-44.jpg",
+      "title": "pic 44.jpg"
+    },
+    {
+      "id": 1661,
+      "category": "home",
+      "local": "assets/home/078-Pic-41.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Pic-41.jpg",
+      "originalFilename": "Pic-41.jpg",
+      "title": "pic 41.jpg"
+    },
+    {
+      "id": 1660,
+      "category": "home",
+      "local": "assets/home/079-Pic-43.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Pic-43.jpg",
+      "originalFilename": "Pic-43.jpg",
+      "title": "pic 43.jpg"
+    },
+    {
+      "id": 1659,
+      "category": "home",
+      "local": "assets/home/080-Pic-40.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Pic-40.jpg",
+      "originalFilename": "Pic-40.jpg",
+      "title": "pic 40.jpg"
+    },
+    {
+      "id": 1658,
+      "category": "home",
+      "local": "assets/home/081-pic-6.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-6.jpg",
+      "originalFilename": "pic-6.jpg",
+      "title": "pic 6.jpg"
+    },
+    {
+      "id": 1654,
+      "category": "identity",
+      "local": "assets/identity/082-1.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/لوجو-دلتا-1.png",
+      "originalFilename": "لوجو-دلتا-1.png",
+      "title": "لوجو دلتا"
+    },
+    {
+      "id": 1646,
+      "category": "misc",
+      "local": "assets/misc/083-2-scaled.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/مشهد-سي-2-scaled.jpg",
+      "originalFilename": "مشهد-سي-2-scaled.jpg",
+      "title": "مشهد سي"
+    },
+    {
+      "id": 1645,
+      "category": "misc",
+      "local": "assets/misc/084-1-scaled.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/مشهد-سي-1-scaled.jpg",
+      "originalFilename": "مشهد-سي-1-scaled.jpg",
+      "title": "مشهد سي"
+    },
+    {
+      "id": 1644,
+      "category": "photos",
+      "local": "assets/photos/085-Whisk_8dce4e9294cbbbbb16f4acbe476f5555dr.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Whisk_8dce4e9294cbbbbb16f4acbe476f5555dr.png",
+      "originalFilename": "Whisk_8dce4e9294cbbbbb16f4acbe476f5555dr.png",
+      "title": "whisk 8dce4e9294cbbbbb16f4acbe476f5555dr"
+    },
+    {
+      "id": 1643,
+      "category": "misc",
+      "local": "assets/misc/086-WhatsApp-Image-2026-05-22-at-6.00.22-PM-e1782207986925.jpeg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/WhatsApp-Image-2026-05-22-at-6.00.22-PM-e1782207986925.jpeg",
+      "originalFilename": "WhatsApp-Image-2026-05-22-at-6.00.22-PM-e1782207986925.jpeg",
+      "title": "whatsapp image 2026 05 22 at 6.00.22 pm"
+    },
+    {
+      "id": 1642,
+      "category": "photos",
+      "local": "assets/home/002-Whisk_36153d35fd8c943ac1244c9087a6f7eadr.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Whisk_36153d35fd8c943ac1244c9087a6f7eadr.png",
+      "originalFilename": "Whisk_36153d35fd8c943ac1244c9087a6f7eadr.png",
+      "title": "whisk 36153d35fd8c943ac1244c9087a6f7eadr"
+    },
+    {
+      "id": 1641,
+      "category": "misc",
+      "local": "assets/misc/087-Testimonial-3.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Testimonial-3.jpg",
+      "originalFilename": "Testimonial-3.jpg",
+      "title": "testimonial 3.jpg"
+    },
+    {
+      "id": 1640,
+      "category": "misc",
+      "local": "assets/misc/088-Testimonial-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Testimonial-1.jpg",
+      "originalFilename": "Testimonial-1.jpg",
+      "title": "testimonial 1.jpg"
+    },
+    {
+      "id": 1639,
+      "category": "misc",
+      "local": "assets/misc/089-Testimonial-4.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Testimonial-4.jpg",
+      "originalFilename": "Testimonial-4.jpg",
+      "title": "testimonial 4.jpg"
+    },
+    {
+      "id": 1638,
+      "category": "misc",
+      "local": "assets/misc/090-Post-5.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-5.jpg",
+      "originalFilename": "Post-5.jpg",
+      "title": "post 5.jpg"
+    },
+    {
+      "id": 1637,
+      "category": "misc",
+      "local": "assets/misc/091-Post-3.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-3.jpg",
+      "originalFilename": "Post-3.jpg",
+      "title": "post 3.jpg"
+    },
+    {
+      "id": 1636,
+      "category": "home",
+      "local": "assets/home/092-pic-11.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-11.jpg",
+      "originalFilename": "pic-11.jpg",
+      "title": "pic 11.jpg"
+    },
+    {
+      "id": 1635,
+      "category": "misc",
+      "local": "assets/misc/093-Rectangle-1.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Rectangle-1.png",
+      "originalFilename": "Rectangle-1.png",
+      "title": "rectangle 1.png"
+    },
+    {
+      "id": 1634,
+      "category": "home",
+      "local": "assets/home/094-pic-8.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-8.jpg",
+      "originalFilename": "pic-8.jpg",
+      "title": "pic 8.jpg"
+    },
+    {
+      "id": 1633,
+      "category": "home",
+      "local": "assets/home/095-pic-10.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-10.png",
+      "originalFilename": "pic-10.png",
+      "title": "pic 10.png"
+    },
+    {
+      "id": 1632,
+      "category": "misc",
+      "local": "assets/misc/096-Post-2.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-2.jpg",
+      "originalFilename": "Post-2.jpg",
+      "title": "post 2.jpg"
+    },
+    {
+      "id": 1631,
+      "category": "home",
+      "local": "assets/home/097-pic-3.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-3.jpg",
+      "originalFilename": "pic-3.jpg",
+      "title": "pic 3.jpg"
+    },
+    {
+      "id": 1630,
+      "category": "home",
+      "local": "assets/home/098-pic-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-1.jpg",
+      "originalFilename": "pic-1.jpg",
+      "title": "pic 1.jpg"
+    },
+    {
+      "id": 1629,
+      "category": "misc",
+      "local": "assets/misc/099-Post-4.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-4.jpg",
+      "originalFilename": "Post-4.jpg",
+      "title": "post 4.jpg"
+    },
+    {
+      "id": 1628,
+      "category": "misc",
+      "local": "assets/misc/100-Post-1.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post-1.jpg",
+      "originalFilename": "Post-1.jpg",
+      "title": "post 1.jpg"
+    },
+    {
+      "id": 1627,
+      "category": "misc",
+      "local": "assets/misc/101-Post.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Post.jpg",
+      "originalFilename": "Post.jpg",
+      "title": "post.jpg"
+    },
+    {
+      "id": 1626,
+      "category": "misc",
+      "local": "assets/misc/102-placeholder-3.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/placeholder-3.png",
+      "originalFilename": "placeholder-3.png",
+      "title": "placeholder.png"
+    },
+    {
+      "id": 1625,
+      "category": "misc",
+      "local": "assets/misc/103-placeholder-2.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/placeholder-2.png",
+      "originalFilename": "placeholder-2.png",
+      "title": "placeholder.png"
+    },
+    {
+      "id": 1624,
+      "category": "misc",
+      "local": "assets/misc/104-placeholder-1.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/placeholder-1.png",
+      "originalFilename": "placeholder-1.png",
+      "title": "placeholder.png"
+    },
+    {
+      "id": 1623,
+      "category": "misc",
+      "local": "assets/misc/105-placeholder.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/placeholder.png",
+      "originalFilename": "placeholder.png",
+      "title": "placeholder.png"
+    },
+    {
+      "id": 1622,
+      "category": "home",
+      "local": "assets/home/106-pic-9.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/pic-9.jpg",
+      "originalFilename": "pic-9.jpg",
+      "title": "pic 9.jpg"
+    },
+    {
+      "id": 1621,
+      "category": "misc",
+      "local": "assets/misc/107-scaled.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/مشهد-سي-scaled.jpg",
+      "originalFilename": "مشهد-سي-scaled.jpg",
+      "title": "مشهد سي"
+    },
+    {
+      "id": 1619,
+      "category": "misc",
+      "local": "assets/misc/108-0.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/0.png",
+      "originalFilename": "0.png",
+      "title": ""
+    },
+    {
+      "id": 1612,
+      "category": "identity",
+      "local": "assets/identity/109-cropped.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/cropped-لوجو-دلتا.png",
+      "originalFilename": "cropped-لوجو-دلتا.png",
+      "title": "cropped لوجو دلتا.png"
+    },
+    {
+      "id": 510,
+      "category": "misc",
+      "local": "assets/misc/110-coffee-house-social-image.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2022/01/coffee-house-social-image.jpg",
+      "originalFilename": "coffee-house-social-image.jpg",
+      "title": "coffee house social image"
+    },
+    {
+      "id": 409,
+      "category": "misc",
+      "local": "assets/misc/111-gallery-07-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/gallery-07-free-img.jpg",
+      "originalFilename": "gallery-07-free-img.jpg",
+      "title": "gallery 07 free img"
+    },
+    {
+      "id": 408,
+      "category": "misc",
+      "local": "assets/misc/112-gallery-06-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/gallery-06-free-img.jpg",
+      "originalFilename": "gallery-06-free-img.jpg",
+      "title": "gallery 06 free img"
+    },
+    {
+      "id": 407,
+      "category": "misc",
+      "local": "assets/misc/113-gallery-08-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/gallery-08-free-img.jpg",
+      "originalFilename": "gallery-08-free-img.jpg",
+      "title": "gallery 08 free img"
+    },
+    {
+      "id": 406,
+      "category": "misc",
+      "local": "assets/misc/114-gallery-05-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/gallery-05-free-img.jpg",
+      "originalFilename": "gallery-05-free-img.jpg",
+      "title": "gallery 05 free img"
+    },
+    {
+      "id": 404,
+      "category": "misc",
+      "local": "assets/misc/115-product-005-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-005-free-img.png",
+      "originalFilename": "product-005-free-img.png",
+      "title": "product 005 free img"
+    },
+    {
+      "id": 403,
+      "category": "identity",
+      "local": "assets/identity/116-logo-footer-01-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/logo-footer-01-free-img.png",
+      "originalFilename": "logo-footer-01-free-img.png",
+      "title": "logo footer 01 free img"
+    },
+    {
+      "id": 402,
+      "category": "identity",
+      "local": "assets/identity/117-logo-retina-001-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/logo-retina-001-free-img.png",
+      "originalFilename": "logo-retina-001-free-img.png",
+      "title": "logo retina 001 free img"
+    },
+    {
+      "id": 397,
+      "category": "identity",
+      "local": "assets/identity/118-logo-regular-001-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/logo-regular-001-free-img.png",
+      "originalFilename": "logo-regular-001-free-img.png",
+      "title": "logo regular 001 free img"
+    },
+    {
+      "id": 392,
+      "category": "misc",
+      "local": "assets/misc/119-gallery-003-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/gallery-003-free-img.jpg",
+      "originalFilename": "gallery-003-free-img.jpg",
+      "title": "gallery 003 free img"
+    },
+    {
+      "id": 359,
+      "category": "misc",
+      "local": "assets/misc/120-gallery-04-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/gallery-04-free-img.jpg",
+      "originalFilename": "gallery-04-free-img.jpg",
+      "title": "gallery 04 free img"
+    },
+    {
+      "id": 357,
+      "category": "misc",
+      "local": "assets/misc/121-gallery-02-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/gallery-02-free-img.jpg",
+      "originalFilename": "gallery-02-free-img.jpg",
+      "title": "gallery 02 free img"
+    },
+    {
+      "id": 356,
+      "category": "misc",
+      "local": "assets/misc/122-gallery-01-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/gallery-01-free-img.jpg",
+      "originalFilename": "gallery-01-free-img.jpg",
+      "title": "gallery 01 free img"
+    },
+    {
+      "id": 289,
+      "category": "misc",
+      "local": "assets/misc/123-product-13-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-13-free-img.jpg",
+      "originalFilename": "product-13-free-img.jpg",
+      "title": "product-13-free-img"
+    },
+    {
+      "id": 288,
+      "category": "misc",
+      "local": "assets/misc/124-product-12-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-12-free-img.jpg",
+      "originalFilename": "product-12-free-img.jpg",
+      "title": "product-12-free-img"
+    },
+    {
+      "id": 287,
+      "category": "misc",
+      "local": "assets/misc/125-product-11-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-11-free-img.jpg",
+      "originalFilename": "product-11-free-img.jpg",
+      "title": "product-11-free-img"
+    },
+    {
+      "id": 286,
+      "category": "misc",
+      "local": "assets/misc/126-product-10-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-10-free-img.jpg",
+      "originalFilename": "product-10-free-img.jpg",
+      "title": "product-10-free-img"
+    },
+    {
+      "id": 285,
+      "category": "misc",
+      "local": "assets/misc/127-product-09-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-09-free-img.jpg",
+      "originalFilename": "product-09-free-img.jpg",
+      "title": "product-09-free-img"
+    },
+    {
+      "id": 284,
+      "category": "misc",
+      "local": "assets/misc/128-product-08-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-08-free-img.jpg",
+      "originalFilename": "product-08-free-img.jpg",
+      "title": "product-08-free-img"
+    },
+    {
+      "id": 283,
+      "category": "misc",
+      "local": "assets/misc/129-product-07-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-07-free-img.jpg",
+      "originalFilename": "product-07-free-img.jpg",
+      "title": "product-07-free-img"
+    },
+    {
+      "id": 282,
+      "category": "misc",
+      "local": "assets/misc/130-product-06-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/product-06-free-img.jpg",
+      "originalFilename": "product-06-free-img.jpg",
+      "title": "product-06-free-img"
+    },
+    {
+      "id": 216,
+      "category": "misc",
+      "local": "assets/misc/131-bg-10-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/bg-10-free-img.jpg",
+      "originalFilename": "bg-10-free-img.jpg",
+      "title": "bg-10-free-img"
+    },
+    {
+      "id": 215,
+      "category": "misc",
+      "local": "assets/misc/132-bg-09-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/bg-09-free-img.jpg",
+      "originalFilename": "bg-09-free-img.jpg",
+      "title": "bg-09-free-img"
+    },
+    {
+      "id": 214,
+      "category": "misc",
+      "local": "assets/misc/133-bg-08-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/bg-08-free-img.jpg",
+      "originalFilename": "bg-08-free-img.jpg",
+      "title": "bg-08-free-img"
+    },
+    {
+      "id": 158,
+      "category": "misc",
+      "local": "assets/misc/134-quotation-mark-01-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/quotation-mark-01-free-img.png",
+      "originalFilename": "quotation-mark-01-free-img.png",
+      "title": "quotation-mark-01-free-img"
+    },
+    {
+      "id": 109,
+      "category": "identity",
+      "local": "assets/identity/135-insta-logo-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/05/insta-logo-img.png",
+      "originalFilename": "insta-logo-img.png",
+      "title": "insta-logo-img"
+    },
+    {
+      "id": 94,
+      "category": "misc",
+      "local": "assets/misc/136-testimonial-13-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/testimonial-13-free-img.jpg",
+      "originalFilename": "testimonial-13-free-img.jpg",
+      "title": "testimonial-13-free-img"
+    },
+    {
+      "id": 93,
+      "category": "misc",
+      "local": "assets/misc/137-testimonial-09-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/testimonial-09-free-img.jpg",
+      "originalFilename": "testimonial-09-free-img.jpg",
+      "title": "testimonial-09-free-img"
+    },
+    {
+      "id": 76,
+      "category": "misc",
+      "local": "assets/misc/138-bg-006-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/bg-006-free-img.png",
+      "originalFilename": "bg-006-free-img.png",
+      "title": "bg-006-free-img"
+    },
+    {
+      "id": 63,
+      "category": "misc",
+      "local": "assets/misc/139-cropped-favicon-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/cropped-favicon-free-img.png",
+      "originalFilename": "cropped-favicon-free-img.png",
+      "title": "cropped favicon free img.png"
+    },
+    {
+      "id": 42,
+      "category": "misc",
+      "local": "assets/misc/140-product-04-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/product-04-free-img.png",
+      "originalFilename": "product-04-free-img.png",
+      "title": "product 04 free img"
+    },
+    {
+      "id": 41,
+      "category": "misc",
+      "local": "assets/misc/141-product-03-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/product-03-free-img.png",
+      "originalFilename": "product-03-free-img.png",
+      "title": "product 03 free img"
+    },
+    {
+      "id": 40,
+      "category": "misc",
+      "local": "assets/misc/142-product-02-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/product-02-free-img.png",
+      "originalFilename": "product-02-free-img.png",
+      "title": "product 02 free img"
+    },
+    {
+      "id": 39,
+      "category": "misc",
+      "local": "assets/misc/143-product-01-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/product-01-free-img.png",
+      "originalFilename": "product-01-free-img.png",
+      "title": "product 01 free img"
+    },
+    {
+      "id": 35,
+      "category": "misc",
+      "local": "assets/misc/144-favicon-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/favicon-free-img.png",
+      "originalFilename": "favicon-free-img.png",
+      "title": "favicon free img"
+    },
+    {
+      "id": 34,
+      "category": "misc",
+      "local": "assets/misc/145-bg-04-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/bg-04-free-img.png",
+      "originalFilename": "bg-04-free-img.png",
+      "title": "bg 04 free img"
+    },
+    {
+      "id": 33,
+      "category": "misc",
+      "local": "assets/misc/146-bg-03-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/bg-03-free-img.png",
+      "originalFilename": "bg-03-free-img.png",
+      "title": "bg 03 free img"
+    },
+    {
+      "id": 32,
+      "category": "misc",
+      "local": "assets/misc/147-bg-02-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/bg-02-free-img.png",
+      "originalFilename": "bg-02-free-img.png",
+      "title": "bg 02 free img"
+    },
+    {
+      "id": 31,
+      "category": "misc",
+      "local": "assets/misc/148-bg-01-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/bg-01-free-img.png",
+      "originalFilename": "bg-01-free-img.png",
+      "title": "bg 01 free img"
+    },
+    {
+      "id": 30,
+      "category": "misc",
+      "local": "assets/misc/149-arrow-02-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/arrow-02-free-img.png",
+      "originalFilename": "arrow-02-free-img.png",
+      "title": "arrow 02 free img"
+    },
+    {
+      "id": 29,
+      "category": "misc",
+      "local": "assets/misc/150-arrow-01-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/arrow-01-free-img.png",
+      "originalFilename": "arrow-01-free-img.png",
+      "title": "arrow 01 free img"
+    },
+    {
+      "id": 28,
+      "category": "misc",
+      "local": "assets/misc/151-about-01-free-img.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/about-01-free-img.png",
+      "originalFilename": "about-01-free-img.png",
+      "title": "about 01 free img"
+    },
+    {
+      "id": 27,
+      "category": "misc",
+      "local": "assets/misc/152-insta-04-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/insta-04-free-img.jpg",
+      "originalFilename": "insta-04-free-img.jpg",
+      "title": "insta 04 free img"
+    },
+    {
+      "id": 26,
+      "category": "misc",
+      "local": "assets/misc/153-insta-03-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/insta-03-free-img.jpg",
+      "originalFilename": "insta-03-free-img.jpg",
+      "title": "insta 03 free img"
+    },
+    {
+      "id": 25,
+      "category": "misc",
+      "local": "assets/misc/154-insta-02-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/insta-02-free-img.jpg",
+      "originalFilename": "insta-02-free-img.jpg",
+      "title": "insta 02 free img"
+    },
+    {
+      "id": 24,
+      "category": "misc",
+      "local": "assets/misc/155-insta-01-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/insta-01-free-img.jpg",
+      "originalFilename": "insta-01-free-img.jpg",
+      "title": "insta 01 free img"
+    },
+    {
+      "id": 23,
+      "category": "misc",
+      "local": "assets/misc/156-bg-07-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/bg-07-free-img.jpg",
+      "originalFilename": "bg-07-free-img.jpg",
+      "title": "bg 07 free img"
+    },
+    {
+      "id": 21,
+      "category": "misc",
+      "local": "assets/misc/157-bg-05-free-img.jpg",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2021/04/bg-05-free-img.jpg",
+      "originalFilename": "bg-05-free-img.jpg",
+      "title": "bg 05 free img"
+    },
+    {
+      "id": 7,
+      "category": "identity",
+      "local": "assets/identity/001-file.png",
+      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/لوجو-دلتا.png",
+      "originalFilename": "لوجو-دلتا.png",
+      "title": "لوجو دلتا"
+    }
+  ]
+}

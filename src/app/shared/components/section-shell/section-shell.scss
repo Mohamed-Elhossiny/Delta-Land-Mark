@@ -1,0 +1,22 @@
+.section {
+  position: relative;
+  overflow-x: clip;
+}
+
+.section--padded {
+  padding-block: var(--pad-y);
+  padding-inline: var(--pad-x);
+}
+
+.section--gray {
+  background: var(--color-bg-muted);
+}
+
+.section--warm {
+  background: var(--color-bg-warm);
+}
+
+.section--dark {
+  background: var(--color-bg-inverse);
+  color: var(--color-fg-on-dark);
+}

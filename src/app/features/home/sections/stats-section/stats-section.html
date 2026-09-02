@@ -1,0 +1,18 @@
+@if (vm$ | async; as vm) {
+  <section class="stats-band" appScrollReveal variant="scale">
+    <div class="stats-band__bg" aria-hidden="true">
+      <img class="stats-band__bg-image" [src]="vm.image" alt="" />
+      <div class="stats-band__overlay"></div>
+      <div class="stats-band__glow"></div>
+    </div>
+
+    <div class="stats-band__content x-padding y-padding">
+      @for (item of vm.stats?.items ?? []; track item.value; let i = $index) {
+        <article class="stats-band__stat">
+          <p class="stats-band__label">{{ item.label | localize }}</p>
+          <p class="stats-band__value">{{ item.display | localize }}</p>
+        </article>
+      }
+    </div>
+  </section>
+}

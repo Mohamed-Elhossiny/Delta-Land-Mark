@@ -1,0 +1,157 @@
+.contact-band {
+  position: relative;
+  overflow: hidden;
+  color: var(--color-fg-on-dark);
+}
+
+.contact-band__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.contact-band__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center center;
+  animation: contactKenBurns 22s var(--ease-brand) infinite alternate;
+  will-change: transform;
+}
+
+.contact-band__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(20, 11, 6, 0.62) 0%, rgba(20, 11, 6, 0.88) 100%),
+    linear-gradient(90deg, rgba(20, 11, 6, 0.4) 0%, rgba(20, 11, 6, 0.9) 100%);
+}
+
+html[dir='rtl'] .contact-band__overlay {
+  background:
+    linear-gradient(180deg, rgba(20, 11, 6, 0.62) 0%, rgba(20, 11, 6, 0.88) 100%),
+    linear-gradient(270deg, rgba(20, 11, 6, 0.4) 0%, rgba(20, 11, 6, 0.9) 100%);
+}
+
+.contact-band__glow {
+  position: absolute;
+  inset-inline-end: -12%;
+  top: 20%;
+  width: min(44vw, 30rem);
+  height: min(44vw, 30rem);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 98, 16, 0.26) 0%, transparent 70%);
+  filter: blur(14px);
+  animation: contactGlow 8s var(--ease-brand) infinite alternate;
+  pointer-events: none;
+}
+
+.contact-band__content {
+  position: relative;
+  z-index: 1;
+  max-width: min(40rem, 100%);
+  opacity: 0;
+  transform: translateY(1.5rem);
+}
+
+.contact-band.reveal--visible .contact-band__content {
+  animation: contactIn 0.8s var(--ease-brand) forwards;
+}
+
+.contact-band__title {
+  margin: 0;
+  font-size: clamp(1.85rem, 3.4em, 3.5rem);
+  line-height: 1.12;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  text-shadow:
+    0 0 28px rgba(0, 0, 0, 0.65),
+    0 2px 4px rgba(0, 0, 0, 0.9),
+    0 6px 24px rgba(0, 0, 0, 0.5);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 2px;
+    margin-bottom: 0.9em;
+    background: var(--color-primary);
+    box-shadow: 0 0 14px rgba(255, 98, 16, 0.55);
+    transform-origin: inline-start;
+    transform: scaleX(0);
+  }
+}
+
+.contact-band.reveal--visible .contact-band__title::before {
+  animation: contactAccentGrow 0.7s var(--ease-brand) 0.2s forwards;
+}
+
+.contact-band__subtitle {
+  margin: 1em 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(1rem, 1.15em, 1.2rem);
+  line-height: 1.55;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
+}
+
+.contact-band__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  margin-top: 2em;
+  opacity: 0;
+  transform: translateY(0.75rem);
+}
+
+.contact-band.reveal--visible .contact-band__actions {
+  animation: contactIn 0.7s var(--ease-brand) 0.25s forwards;
+}
+
+@keyframes contactKenBurns {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+@keyframes contactGlow {
+  from { opacity: 0.5; transform: translateY(0); }
+  to { opacity: 0.95; transform: translateY(-1rem); }
+}
+
+@keyframes contactIn {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes contactAccentGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@media (max-width: 640px) {
+  .contact-band__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-band__bg-image,
+  .contact-band__glow {
+    animation: none;
+  }
+
+  .contact-band__content,
+  .contact-band__actions {
+    opacity: 1;
+    transform: none;
+  }
+
+  .contact-band__title::before {
+    transform: scaleX(1);
+  }
+}

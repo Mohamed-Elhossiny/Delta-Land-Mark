@@ -1,0 +1,18 @@
+@if (vm$ | async; as vm) {
+  <section class="features-band" appScrollReveal variant="scale">
+    <div class="features-band__bg" aria-hidden="true">
+      <img class="features-band__bg-image" [src]="vm.image" alt="" />
+      <div class="features-band__overlay"></div>
+      <div class="features-band__glow"></div>
+    </div>
+
+    <div class="features-band__content x-padding y-padding">
+      @for (item of vm.features?.items ?? []; track $index; let i = $index) {
+        <article class="features-band__line">
+          <span class="features-band__index">{{ formatIndex(i) }}</span>
+          <p class="features-band__text">{{ item.text | localize }}</p>
+        </article>
+      }
+    </div>
+  </section>
+}

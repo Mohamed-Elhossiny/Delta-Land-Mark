@@ -1,0 +1,17 @@
+@if (vm$ | async; as vm) {
+  <app-section-shell tone="warm">
+    <div class="about">
+      <div class="about__copy" appScrollReveal variant="right">
+        <h2 class="display-2">{{ vm.about?.title | localize }}</h2>
+        <p class="about__body lead">{{ vm.about?.body | localize }}</p>
+      </div>
+
+      @if (vm.image) {
+        <figure class="about__media" appScrollReveal [delay]="140" variant="left">
+          <img [src]="vm.image" alt="" />
+          <span class="about__media-accent" aria-hidden="true"></span>
+        </figure>
+      }
+    </div>
+  </app-section-shell>
+}

@@ -1,0 +1,13 @@
+@if (vm$ | async; as vm) {
+  <app-page-hero [title]="vm.page.title" [subtitle]="vm.page.subtitle" [imageUrl]="vm.heroImage" />
+
+  <app-section-shell tone="gray">
+    <div class="brand-grid">
+      @for (brand of vm.brands; track brand.name; let i = $index) {
+        <article class="brand-grid__item" appScrollReveal [delay]="i * 60">
+          <img [src]="brand.logoSrc" [alt]="brand.logo.alt || brand.name" />
+        </article>
+      }
+    </div>
+  </app-section-shell>
+}

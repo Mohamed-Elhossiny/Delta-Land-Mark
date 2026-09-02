@@ -1,0 +1,27 @@
+@if (vm$ | async; as vm) {
+  <app-page-hero
+    [title]="{ ar: 'تجربة متكاملة', en: 'Integrated Experience' }"
+    [subtitle]="{ ar: 'كل ما تحتاجه في مكان واحد', en: 'Everything you need in one place' }"
+    [imageUrl]="vm.heroImage"
+  />
+
+  @for (section of vm.sections; track section.id; let i = $index) {
+    <app-section-shell [tone]="i % 2 === 0 ? 'light' : 'gray'">
+      <article
+        class="experience"
+        [class.experience--reverse]="i % 2 === 1"
+        appScrollReveal
+        [delay]="i * 80"
+        [variant]="i % 2 === 0 ? 'left' : 'right'"
+      >
+        <div class="experience__copy">
+          <h2 class="display-2">{{ section.title | localize }}</h2>
+          <p class="lead">{{ section.description | localize }}</p>
+        </div>
+        <figure class="experience__media">
+          <img [src]="section.imageSrc" [alt]="section.title | localize" />
+        </figure>
+      </article>
+    </app-section-shell>
+  }
+}

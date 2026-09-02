@@ -1,0 +1,42 @@
+{
+  "ui": {
+    "nav": {
+      "home": "الرئيسية",
+      "brands": "البراندات",
+      "floorPlan": "المخطط الهندسي",
+      "photos": "الصور",
+      "integratedExperience": "تجربة متكاملة"
+    },
+    "header": {
+      "langSwitch": "English",
+      "menu": "القائمة"
+    },
+    "hero": {
+      "scroll": "مرر",
+      "eyebrow": "مشروع متعدد الاستخدامات في قلب الدلتا",
+      "title": "تجربة متكاملة في موقع استراتيجي مميز",
+      "playToggle": "تشغيل أو إيقاف الفيديو"
+    },
+    "footer": {
+      "ctaTitle": "ابدأ استثمارك في دلتا لاند مارك",
+      "ctaButton": "تواصل معنا الآن",
+      "quickLinks": "روابط سريعة",
+      "contact": "تواصل",
+      "address": "العنوان",
+      "location": "الموقع",
+      "allRightsReserved": "جميع الحقوق محفوظة"
+    },
+    "integrated": {
+      "title": "تجربة متكاملة",
+      "subtitle": "كل ما تحتاجه في مكان واحد"
+    },
+    "cta": {
+      "contactNow": "تواصل معنا الآن",
+      "viewLocation": "موقعنا",
+      "facebook": "صفحة الفيسبوك"
+    },
+    "common": {
+      "backToTop": "العودة للأعلى"
+    }
+  }
+}

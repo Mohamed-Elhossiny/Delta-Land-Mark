@@ -1,0 +1,113 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.85em, 1.35em, 1.35em);
+}
+
+.cards__item {
+  position: relative;
+  min-height: clamp(17em, 22em, 24em);
+  border-radius: var(--radius-soft);
+  overflow: hidden;
+  display: grid;
+  align-items: end;
+  color: #fff;
+  isolation: isolate;
+  transition:
+    transform var(--dur-brand) var(--ease-brand),
+    box-shadow var(--dur-brand) var(--ease-brand);
+
+  &:hover {
+    transform: translateY(-0.35rem);
+    box-shadow: 0 1.25rem 2.5rem rgba(20, 11, 6, 0.22);
+
+    .cards__image {
+      transform: scale(1.08);
+    }
+
+    .cards__overlay {
+      background:
+        linear-gradient(180deg, rgba(20, 11, 6, 0.15) 0%, rgba(20, 11, 6, 0.55) 45%, rgba(20, 11, 6, 0.92) 100%);
+    }
+  }
+}
+
+.cards__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.cards__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center center;
+  transition: transform 1s var(--ease-brand);
+  will-change: transform;
+}
+
+.cards__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(20, 11, 6, 0.1) 0%, rgba(20, 11, 6, 0.45) 50%, rgba(20, 11, 6, 0.88) 100%);
+  transition: background var(--dur-brand) var(--ease-brand);
+}
+
+.cards__body {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.85em;
+  padding: clamp(1.15em, 1.75em, 1.75em);
+}
+
+.cards__title {
+  margin: 0;
+  font-size: clamp(1.25rem, 2em, 2rem);
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.75),
+    0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.cards__desc {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.55;
+  font-size: clamp(0.9rem, 1em, 1.05rem);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+}
+
+.cards__body app-primary-cta {
+  margin-top: 0.25em;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cards__item {
+    min-height: clamp(16em, 20em, 22em);
+  }
+}
+
+@media (min-width: 1400px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cards__item:hover .cards__image {
+    transform: none;
+  }
+
+  .cards__item:hover {
+    transform: none;
+  }
+}

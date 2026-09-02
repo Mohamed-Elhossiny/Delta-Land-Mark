@@ -1,0 +1,17 @@
+<div class="menu" [class.menu--open]="open()">
+  <div class="menu__backdrop" (click)="close.emit()"></div>
+  <nav class="menu__panel x-padding" [attr.aria-label]="'header.menu' | translate">
+    <ul class="menu__list">
+      @if (nav$ | async; as items) {
+        @for (item of items; track item.id; let i = $index) {
+          <li class="menu__item" [style.transitionDelay.ms]="i * 80">
+            <a [routerLink]="item.path" (click)="onNavigate()">{{ item.label | localize }}</a>
+          </li>
+        }
+      }
+      <li class="menu__item menu__item--accent">
+        <a routerLink="/integrated-experience" (click)="onNavigate()">{{ 'nav.integratedExperience' | translate }}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
