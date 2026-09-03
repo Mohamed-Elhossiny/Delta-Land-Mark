@@ -10,8 +10,46 @@
       content="دلتا لاند مارك — مول تجاري ووجهة متعددة الاستخدامات في قلب الدلتا."
     />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@400;500;600&family=Readex+Pro:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="bg-video-container" aria-hidden="true">
+      <video
+        id="site-bg-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        disablepictureinpicture
+      >
+        <source src="assets/video/delta.mp4" type="video/mp4" />
+      </video>
+      <div class="bg-video-container__veil"></div>
+    </div>
     <app-root></app-root>
+    <script>
+      (function () {
+        var video = document.getElementById('site-bg-video');
+        if (!video) return;
+        video.muted = true;
+        video.defaultMuted = true;
+        video.playsInline = true;
+        var play = function () {
+          var result = video.play();
+          if (result && result.catch) result.catch(function () {});
+        };
+        video.addEventListener('canplay', play);
+        video.addEventListener('loadeddata', play);
+        document.addEventListener('pointerdown', play, { once: true });
+        play();
+      })();
+    </script>
   </body>
 </html>

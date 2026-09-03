@@ -1,13 +1,5 @@
 <div class="loader" [class.loader--exit]="exiting()">
-  <div class="loader__slides" aria-hidden="true">
-    @for (i of [1, 2, 3, 4, 5]; track i) {
-      <div class="loader__slide"></div>
-    }
-  </div>
   <div class="loader__brand">
-    <span class="loader__ring"></span>
-    @if (brandName$ | async; as name) {
-      <p class="loader__name">{{ name }}</p>
-    }
+    <img class="loader__logo" [src]="logoSrc" width="220" height="220" alt="Delta LandMark" />
   </div>
 </div>

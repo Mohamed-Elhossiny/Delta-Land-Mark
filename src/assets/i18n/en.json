@@ -9,13 +9,16 @@
     },
     "header": {
       "langSwitch": "العربية",
-      "menu": "Menu"
+      "menu": "Menu",
+      "cta": "Contact us"
     },
     "hero": {
       "scroll": "Scroll",
       "eyebrow": "A mixed-use destination in the heart of the Delta",
-      "title": "An integrated experience in a prime strategic location",
-      "playToggle": "Play or pause background video"
+      "title": "An integrated experience",
+      "playToggle": "Play or pause background video",
+      "metaLocation": "Km 64 Agricultural Road",
+      "metaArea": "52,000 sqm"
     },
     "footer": {
       "ctaTitle": "Start your investment at Delta LandMark",
@@ -24,7 +27,11 @@
       "contact": "Contact",
       "address": "Address",
       "location": "Location",
-      "allRightsReserved": "All rights reserved"
+      "allRightsReserved": "All rights reserved",
+      "phone": "Call us",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "maps": "Location on map"
     },
     "integrated": {
       "title": "Integrated Experience",
@@ -36,7 +43,9 @@
       "facebook": "Facebook page"
     },
     "common": {
-      "backToTop": "Back to top"
+      "backToTop": "Back to top",
+      "openContact": "Open contact options",
+      "closeContact": "Close contact options"
     }
   },
   "content": {

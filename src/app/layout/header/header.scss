@@ -1,125 +1,151 @@
-.header {
+.mt-nav {
   position: fixed;
-  inset-inline: 0;
   top: 0;
-  z-index: 300;
+  inset-inline: 0;
+  z-index: 50;
+  padding: 0.85rem 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 1.5rem;
+  overflow: hidden;
   color: #fff;
-  transition:
-    background var(--dur-brand) var(--ease-brand),
-    color var(--dur-brand) var(--ease-brand),
-    backdrop-filter var(--dur-brand) var(--ease-brand);
 
-  &--solid {
-    background: rgba(20, 11, 6, 0.92);
-    backdrop-filter: blur(8px);
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.12) 70%, transparent);
+  }
+
+  &--solid,
+  &--menu-open {
+    background: rgb(75 85 99 / 0.8);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgb(255 255 255 / 0.05);
+    padding-block: 0.65rem;
+
+    &::before {
+      opacity: 0;
+    }
   }
 }
 
-.header__inner {
+.mt-nav__brand {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.75em;
-  min-height: var(--header-height);
+  grid-column: 1;
+  justify-self: start;
 }
 
-.header__logo {
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0;
-
-  img {
-    height: clamp(2.75rem, 3.5em, 3.85rem);
-    width: auto;
-    max-width: none;
-  }
+.mt-nav__logo {
+  display: block;
+  height: 2.85rem;
+  width: auto;
+  max-width: 7.5rem;
+  object-fit: contain;
+  object-position: center;
 }
 
-.header__end {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  margin-inline-start: auto;
-}
-
-.header__actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.header__lang,
-.header__whatsapp {
-  display: inline-flex;
+.mt-nav__links {
+  display: none;
   align-items: center;
   justify-content: center;
-  min-height: var(--touch-min);
-  min-width: var(--touch-min);
-  padding-inline: 0.85em;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 2em;
-  color: inherit;
-  transition:
-    background var(--dur-brand) var(--ease-brand),
-    transform var(--dur-brand) var(--ease-brand);
+  gap: 2rem;
+  grid-column: 2;
+}
 
-  &:active {
-    transform: scale(0.97);
+.mt-nav__end {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 1.5rem;
+  grid-column: 3;
+}
+
+.mt-nav__lang {
+  font-family: var(--font-tight);
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(255 255 255 / 0.8);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    color: #fff;
   }
 }
 
-.header__lang:hover,
-.header__whatsapp:hover {
-  background: rgba(255, 255, 255, 0.08);
+.liquid-btn--nav {
+  padding: 0.625rem 1.25rem;
+  border-radius: 999px;
+  font-family: var(--font-tight);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.header__whatsapp {
-  color: var(--color-whatsapp);
-  border-color: rgba(255, 255, 255, 0.25);
+html[dir='rtl'] .liquid-btn--nav svg {
+  transform: scaleX(-1);
 }
 
-.header__burger {
-  width: var(--touch-min);
-  height: var(--touch-min);
+.mt-nav__burger {
+  width: 2.5rem;
+  height: 2.5rem;
   display: grid;
   place-content: center;
   gap: 0.35em;
   color: inherit;
+  background: none;
+  border: none;
 }
 
-.header__burger span {
+.mt-nav__burger span {
   display: block;
-  width: 1.35em;
+  width: 1.2em;
   height: 2px;
   background: currentColor;
-  transition: transform var(--dur-brand) var(--ease-brand);
+  transition: transform 0.4s ease;
 }
 
-.header--menu-open .header__burger span:first-child {
+.mt-nav--menu-open .mt-nav__burger span:first-child {
   transform: translateY(4px) rotate(45deg);
 }
 
-.header--menu-open .header__burger span:last-child {
+.mt-nav--menu-open .mt-nav__burger span:last-child {
   transform: translateY(-4px) rotate(-45deg);
 }
 
-@media (max-width: 640px) {
-  .header__logo img {
-    height: clamp(2.5rem, 3.1em, 3.25rem);
+@media (min-width: 1024px) {
+  .mt-nav__links {
+    display: flex;
   }
 
-  .header__lang {
-    font-size: 0.85em;
-    padding-inline: 0.65em;
+  .liquid-btn--nav {
+    display: inline-flex;
+  }
+
+  .mt-nav__burger {
+    display: none;
   }
 }
 
-@media (min-width: 1200px) {
-  .header__inner {
-    gap: 1em;
+@media (max-width: 640px) {
+  .mt-nav {
+    padding: 0.7rem 1rem;
+    column-gap: 0.75rem;
   }
 
-  .header__logo img {
-    height: clamp(3.25rem, 3.85em, 4.25rem);
+  .mt-nav__logo {
+    height: 2.4rem;
+    max-width: 6.25rem;
   }
 }

@@ -1,25 +1,19 @@
-import { Component, inject, output, signal, OnInit } from '@angular/core';
-import { AsyncPipe } from '@angular/common';
-import { ContentService } from '../../core/services/content';
-import { map } from 'rxjs';
+import { Component, output, signal, OnInit } from '@angular/core';
+import { HEADER_LOGO_PATH } from '../../shared/utils/asset-url';
 
 @Component({
   selector: 'app-intro-loader',
-  imports: [AsyncPipe],
   templateUrl: './intro-loader.html',
   styleUrl: './intro-loader.scss',
 })
 export class IntroLoader implements OnInit {
-  private readonly content = inject(ContentService);
-
   readonly finished = output<void>();
   readonly exiting = signal(false);
-
-  readonly brandName$ = this.content.getSiteContent().pipe(map((c) => c.identity.name.ar));
+  readonly logoSrc = HEADER_LOGO_PATH;
 
   ngOnInit(): void {
     document.body.classList.add('loader-active');
-    window.setTimeout(() => this.finish(), 2200);
+    window.setTimeout(() => this.finish(), 2800);
   }
 
   private finish(): void {

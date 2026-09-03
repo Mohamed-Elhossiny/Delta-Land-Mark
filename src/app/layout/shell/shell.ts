@@ -6,12 +6,13 @@ import { Footer } from '../footer/footer';
 import { BurgerMenu } from '../burger-menu/burger-menu';
 import { IntroLoader } from '../intro-loader/intro-loader';
 import { BackToTop } from '../back-to-top/back-to-top';
+import { ContactFab } from '../contact-fab/contact-fab';
 import { routeAnimations } from '../../shared/animations/app.animations';
 import { SmoothScrollService } from '../../core/services/smooth-scroll';
 
 @Component({
   selector: 'app-shell',
-  imports: [RouterOutlet, Header, Footer, BurgerMenu, IntroLoader, BackToTop],
+  imports: [RouterOutlet, Header, Footer, BurgerMenu, IntroLoader, BackToTop, ContactFab],
   templateUrl: './shell.html',
   styleUrl: './shell.scss',
   animations: [routeAnimations],
@@ -25,13 +26,10 @@ export class Shell implements OnInit, OnDestroy {
   readonly heroOverlay = signal(true);
 
   ngOnInit(): void {
-    this.syncHeroOverlay();
+    this.playBackgroundVideo();
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
-      .subscribe(() => {
-        this.syncHeroOverlay();
-        this.smoothScroll.scrollToTop();
-      });
+      .subscribe(() => this.smoothScroll.scrollToTop());
   }
 
   ngOnDestroy(): void {
@@ -64,7 +62,21 @@ export class Shell implements OnInit, OnDestroy {
     return outlet.isActivated ? outlet.activatedRoute.snapshot.url.map((s) => s.path).join('/') || 'home' : '';
   }
 
-  private syncHeroOverlay(): void {
-    this.heroOverlay.set(this.router.url === '/');
+  private playBackgroundVideo(): void {
+    const video = document.getElementById('site-bg-video') as HTMLVideoElement | null;
+    if (!video) return;
+
+    video.muted = true;
+    video.defaultMuted = true;
+    video.loop = true;
+    video.playsInline = true;
+
+    const tryPlay = (): void => {
+      void video.play().catch(() => undefined);
+    };
+
+    video.addEventListener('canplay', tryPlay);
+    document.addEventListener('pointerdown', tryPlay, { once: true });
+    tryPlay();
   }
 }

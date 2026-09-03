@@ -1,7 +1,89 @@
-<app-hero-section />
-<app-stats-section />
-<app-features-section />
-<app-about-section />
-<app-cards-section />
-<app-categories-section />
-<app-contact-section />
+@if (vm$ | async; as vm) {
+  <div class="mt-main">
+    <div class="mt-hero kinetic-element" id="hero-content" #heroContent>
+      <h1 class="mt-hero__title reveal-up active">{{ 'hero.title' | translate }}</h1>
+      <p class="mt-hero__copy reveal-up active delay-100">{{ vm.tagline | localize }}</p>
+
+      <div class="mt-hero__cta apple-sharpness reveal-up active delay-200">
+        <span class="mt-hero__phone">{{ vm.phone }}</span>
+        <a class="liquid-btn liquid-btn--pill" appLiquidBtn [href]="vm.whatsapp" target="_blank" rel="noopener noreferrer">
+          <span>{{ 'header.cta' | translate }}</span>
+          <svg width="10" height="10" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="mt-hero__meta reveal-up active delay-300">
+        <span>{{ 'hero.metaLocation' | translate }}</span>
+        <span class="mt-hero__dot"></span>
+        <span>{{ 'hero.metaArea' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="mt-features kinetic-element" id="features-grid" #featuresGrid>
+      @for (feature of vm.features; track feature.title.ar; let i = $index) {
+        @if (feature.cta; as cta) {
+          @if (cta.external) {
+            <a
+              class="mt-feature apple-sharpness reveal-up"
+              [class.delay-100]="i === 1"
+              [class.delay-200]="i === 2"
+              [href]="cta.resolvedUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ng-container [ngTemplateOutlet]="featureInner" [ngTemplateOutletContext]="{ $implicit: feature }" />
+            </a>
+          } @else {
+            <a
+              class="mt-feature apple-sharpness reveal-up"
+              [class.delay-100]="i === 1"
+              [class.delay-200]="i === 2"
+              [routerLink]="cta.resolvedUrl"
+            >
+              <ng-container [ngTemplateOutlet]="featureInner" [ngTemplateOutletContext]="{ $implicit: feature }" />
+            </a>
+          }
+        } @else {
+          <div
+            class="mt-feature apple-sharpness reveal-up"
+            [class.delay-100]="i === 1"
+            [class.delay-200]="i === 2"
+          >
+            <ng-container [ngTemplateOutlet]="featureInner" [ngTemplateOutletContext]="{ $implicit: feature }" />
+          </div>
+        }
+      }
+    </div>
+  </div>
+}
+
+<ng-template #featureInner let-feature>
+  <div class="mt-feature__icon">
+    @switch (feature.icon) {
+      @case ('map') {
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/>
+          <circle cx="12" cy="9" r="2.2"/>
+        </svg>
+      }
+      @case ('grid') {
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/>
+          <rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/>
+          <rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/>
+          <rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>
+        </svg>
+      }
+      @default {
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M4 20V8l8-4 8 4v12"/>
+          <path d="M9 20v-6h6v6"/>
+        </svg>
+      }
+    }
+  </div>
+  <h3 class="mt-feature__title">{{ feature.title | localize }}</h3>
+  <p class="mt-feature__text">{{ feature.description | localize }}</p>
+</ng-template>

@@ -1,4 +1,13 @@
+:host {
+  display: block;
+  position: relative;
+  background: transparent;
+}
+
 .shell {
+  position: relative;
+  z-index: 1;
   min-height: var(--100dvh);
   overflow-x: clip;
+  background: transparent;
 }

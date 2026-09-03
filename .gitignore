@@ -41,3 +41,6 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# GitHub rejects files over 100MB — keep the background video locally
+/src/assets/video/delta.mp4

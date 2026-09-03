@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@use './styles/treasury-theme';
 
 :root {
-  --font-latin: 'Montserrat', 'Segoe UI', sans-serif;
+  --font-latin: 'Inter', 'Segoe UI', sans-serif;
+  --font-tight: 'Inter Tight', 'Inter', sans-serif;
   --font-arabic: 'Readex Pro', 'IBM Plex Sans Arabic', Tahoma, sans-serif;
   --font-body: var(--font-arabic);
 
-  --color-bg: #ffffff;
-  --color-bg-muted: #f6f6f6;
-  --color-bg-warm: #fef1e4;
-  --color-bg-inverse: #140b06;
-  --color-fg: #1c0d0a;
-  --color-fg-muted: #353535;
+  --color-bg: #000000;
+  --color-bg-muted: #111111;
+  --color-bg-warm: #1a1a1a;
+  --color-bg-inverse: #000000;
+  --color-fg: #ffffff;
+  --color-fg-muted: rgba(255, 255, 255, 0.7);
   --color-fg-on-dark: #ffffff;
   --color-fg-on-dark-muted: rgba(255, 255, 255, 0.55);
-  --color-primary: #ff6210;
-  --color-primary-hover: #f15808;
-  --color-primary-fg: #ffffff;
+  --color-primary: #ffffff;
+  --color-primary-hover: #f3f3f3;
+  --color-primary-fg: #000000;
   --color-whatsapp: #08a521;
-  --color-border: #eeeeee;
+  --color-border: rgba(255, 255, 255, 0.08);
   --color-border-on-dark: rgba(255, 255, 255, 0.2);
 
   --radius-cta: 2em;
@@ -47,9 +48,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   font-size: var(--fluid-root);
-  overflow-x: clip;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge legacy */
+  overflow-x: hidden;
+  background: #000;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 html::-webkit-scrollbar {
@@ -60,6 +62,7 @@ html::-webkit-scrollbar {
 
 html[dir='ltr'] {
   --font-body: var(--font-latin);
+  --font-tight: 'Inter Tight', 'Inter', sans-serif;
 }
 
 body {
@@ -68,11 +71,18 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   color: var(--color-fg);
-  background: var(--color-bg);
-  transition: background var(--dur-brand) var(--ease-brand);
-  overflow-x: clip;
+  background: #000;
+  overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+app-root {
+  display: block;
+  position: relative;
+  z-index: 1;
+  min-height: var(--100dvh);
+  background: transparent;
 }
 
 body::-webkit-scrollbar {

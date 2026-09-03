@@ -8,15 +8,9 @@
   padding-inline: var(--pad-x);
 }
 
-.section--gray {
-  background: var(--color-bg-muted);
-}
-
-.section--warm {
-  background: var(--color-bg-warm);
-}
-
+.section--gray,
+.section--warm,
 .section--dark {
-  background: var(--color-bg-inverse);
-  color: var(--color-fg-on-dark);
+  background: transparent;
+  color: var(--color-fg);
 }

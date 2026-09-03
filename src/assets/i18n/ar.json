@@ -9,13 +9,16 @@
     },
     "header": {
       "langSwitch": "English",
-      "menu": "القائمة"
+      "menu": "القائمة",
+      "cta": "تواصل معنا"
     },
     "hero": {
       "scroll": "مرر",
       "eyebrow": "مشروع متعدد الاستخدامات في قلب الدلتا",
-      "title": "تجربة متكاملة في موقع استراتيجي مميز",
-      "playToggle": "تشغيل أو إيقاف الفيديو"
+      "title": "تجربة متكاملة",
+      "playToggle": "تشغيل أو إيقاف الفيديو",
+      "metaLocation": "ك ٦٤ الطريق الزراعي",
+      "metaArea": "٥٢٬٠٠٠ م²"
     },
     "footer": {
       "ctaTitle": "ابدأ استثمارك في دلتا لاند مارك",
@@ -24,7 +27,11 @@
       "contact": "تواصل",
       "address": "العنوان",
       "location": "الموقع",
-      "allRightsReserved": "جميع الحقوق محفوظة"
+      "allRightsReserved": "جميع الحقوق محفوظة",
+      "phone": "اتصل بنا",
+      "whatsapp": "واتساب",
+      "facebook": "فيسبوك",
+      "maps": "الموقع على الخريطة"
     },
     "integrated": {
       "title": "تجربة متكاملة",
@@ -36,7 +43,9 @@
       "facebook": "صفحة الفيسبوك"
     },
     "common": {
-      "backToTop": "العودة للأعلى"
+      "backToTop": "العودة للأعلى",
+      "openContact": "فتح خيارات التواصل",
+      "closeContact": "إغلاق خيارات التواصل"
     }
   }
 }
