@@ -1,4 +1,4 @@
-import { Component, inject, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, HostListener, inject, OnDestroy, OnInit, signal } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
 import { Header } from '../header/header';
@@ -58,6 +58,12 @@ export class Shell implements OnInit, OnDestroy {
     this.menuOpen.set(false);
     document.body.classList.remove('menu-open');
     this.smoothScroll.resume();
+  }
+
+  @HostListener('document:mousemove', ['$event'])
+  onMouseMove(event: MouseEvent): void {
+    document.documentElement.style.setProperty('--mouse-x', `${event.clientX}px`);
+    document.documentElement.style.setProperty('--mouse-y', `${event.clientY}px`);
   }
 
   prepareRoute(outlet: RouterOutlet): string {

@@ -1,19 +1,21 @@
 @if (external()) {
   <a
-    class="cta"
+    class="cta bio-elastic-btn fluid-node"
     [class.cta--ghost]="variant() === 'ghost'"
     [href]="href()"
     target="_blank"
     rel="noopener noreferrer"
+    appFluidNode
   >
     <span class="cta__text">{{ label() }}</span>
     <span class="cta__arrow" aria-hidden="true">←</span>
   </a>
 } @else {
   <a
-    class="cta"
+    class="cta bio-elastic-btn fluid-node"
     [class.cta--ghost]="variant() === 'ghost'"
     [routerLink]="href()"
+    appFluidNode
   >
     <span class="cta__text">{{ label() }}</span>
     <span class="cta__arrow" aria-hidden="true">←</span>

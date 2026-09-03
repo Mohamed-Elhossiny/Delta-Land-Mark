@@ -4,8 +4,8 @@
   z-index: 9999;
   display: grid;
   place-items: center;
-  background: var(--color-bg-inverse);
-  color: var(--color-fg-on-dark);
+  background: var(--obsidian);
+  color: var(--text-core);
   transition: opacity 0.7s var(--ease-brand), visibility 0.7s;
 
   &--exit {
@@ -28,7 +28,7 @@
 .loader__slide {
   width: 8em;
   height: 12em;
-  background: linear-gradient(160deg, var(--color-primary), #2a1208);
+  background: linear-gradient(160deg, var(--electric-violet), var(--amber-glow));
   clip-path: polygon(30% 20%, 70% 20%, 70% 80%, 30% 80%);
   animation: loaderFloat 1.8s var(--ease-brand) infinite alternate;
 }
@@ -50,7 +50,7 @@
   height: 3.5em;
   margin: 0 auto 1em;
   border: 2px solid rgba(255, 255, 255, 0.15);
-  border-top-color: var(--color-primary);
+  border-top-color: var(--amber-glow);
   border-radius: 50%;
   animation: spin 0.9s linear infinite;
 }

@@ -1,0 +1,504 @@
+:root {
+  --obsidian: oklch(12% 0.05 280);
+  --electric-violet: oklch(60% 0.25 300);
+  --amber-glow: oklch(75% 0.15 50);
+  --text-core: oklch(98% 0.01 280);
+  --text-dim: oklch(65% 0.05 280);
+  --surface-top: oklch(25% 0.08 280 / 0.4);
+  --surface-bottom: oklch(15% 0.05 280 / 0.6);
+  --shadow-dark: oklch(5% 0.05 280 / 0.9);
+  --shadow-light: oklch(80% 0.15 300 / 0.15);
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  color-scheme: dark;
+}
+
+[data-theme='synthesized'] {
+  --obsidian: oklch(95% 0.02 280);
+  --text-core: oklch(15% 0.05 280);
+  --text-dim: oklch(45% 0.05 280);
+  --surface-top: oklch(100% 0.02 280 / 0.5);
+  --surface-bottom: oklch(90% 0.02 280 / 0.7);
+  --shadow-dark: oklch(60% 0.1 280 / 0.2);
+  --shadow-light: oklch(100% 0 0 / 1);
+  color-scheme: light;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: 1.2s cubic-bezier(0.16, 1, 0.3, 1) both organic-fade;
+}
+
+@keyframes organic-fade {
+  0% {
+    opacity: 0;
+    filter: blur(40px) contrast(150%);
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0) contrast(100%);
+    transform: scale(1);
+  }
+}
+
+.bio-portal {
+  position: fixed;
+  top: 0;
+  right: -5vw;
+  width: 45vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse at 70% 50%, black 10%, rgba(0, 0, 0, 0.6) 40%, transparent 80%);
+  mask-image: radial-gradient(ellipse at 70% 50%, black 10%, rgba(0, 0, 0, 0.6) 40%, transparent 80%);
+  will-change: transform;
+}
+
+html[dir='rtl'] .bio-portal {
+  right: auto;
+  left: -5vw;
+  -webkit-mask-image: radial-gradient(ellipse at 30% 50%, black 10%, rgba(0, 0, 0, 0.6) 40%, transparent 80%);
+  mask-image: radial-gradient(ellipse at 30% 50%, black 10%, rgba(0, 0, 0, 0.6) 40%, transparent 80%);
+}
+
+.bio-portal video,
+.bio-portal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(140%) contrast(120%) hue-rotate(15deg);
+  transform: scale(1.1);
+  mix-blend-mode: screen;
+}
+
+[data-theme='synthesized'] .bio-portal video,
+[data-theme='synthesized'] .bio-portal img {
+  mix-blend-mode: multiply;
+  filter: saturate(80%) contrast(110%) hue-rotate(15deg) opacity(0.45);
+}
+
+.organic-volume {
+  background: linear-gradient(160deg, var(--surface-top), var(--surface-bottom));
+  backdrop-filter: blur(80px) saturate(180%);
+  -webkit-backdrop-filter: blur(80px) saturate(180%);
+  border-radius: 2.5rem;
+  position: relative;
+  isolation: isolate;
+  border: none;
+  box-shadow:
+    inset 1px 1px 3px var(--shadow-light),
+    inset -2px -2px 12px var(--shadow-dark),
+    0 30px 60px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    border-radius 0.8s ease;
+}
+
+.organic-volume::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    var(--electric-violet),
+    transparent 40%
+  );
+  opacity: 0;
+  mix-blend-mode: screen;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 1px;
+  z-index: 10;
+}
+
+.organic-volume::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    inset 2px 0 8px rgba(255, 0, 0, 0.05),
+    inset -2px 0 8px rgba(0, 0, 255, 0.05);
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.organic-volume:hover {
+  transform: translateY(-5px) scale(1.005);
+  border-radius: 2.2rem;
+}
+
+.organic-volume:hover::before {
+  opacity: 0.4;
+}
+
+.bio-elastic-btn {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  padding: 1.2rem 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text-core);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(40px);
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.15),
+    inset 0 -4px 10px rgba(0, 0, 0, 0.5),
+    0 10px 20px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.bio-elastic-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--amber-glow) 0%, transparent 60%);
+  opacity: 0;
+  mix-blend-mode: color-dodge;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.bio-elastic-btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  border-radius: 1rem;
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 10px rgba(0, 0, 0, 0.4),
+    0 15px 30px rgba(120, 30, 200, 0.15);
+}
+
+.bio-elastic-btn:hover::before {
+  opacity: 0.5;
+}
+
+@keyframes synaptic-pulse {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.synaptic-shimmer {
+  background: linear-gradient(
+    120deg,
+    var(--text-core) 0%,
+    var(--electric-violet) 25%,
+    var(--text-core) 50%,
+    var(--amber-glow) 75%,
+    var(--text-core) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: synaptic-pulse linear;
+  animation-timeline: scroll(root block);
+}
+
+.scroll-reveal {
+  animation: organic-reveal view() both;
+}
+
+@keyframes organic-reveal {
+  0% {
+    transform: translateY(80px) scale(0.92);
+    opacity: 0;
+    filter: blur(20px);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.fractal-grid {
+  container-type: inline-size;
+}
+
+.neural-stat {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: -0.04em;
+}
+
+.bio-toggle {
+  width: 52px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--surface-bottom);
+  box-shadow:
+    inset 0 2px 6px var(--shadow-dark),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  flex-shrink: 0;
+}
+
+.bio-toggle::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--amber-glow);
+  box-shadow: 0 0 10px var(--amber-glow);
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.6s;
+}
+
+[data-theme='synthesized'] .bio-toggle::before {
+  transform: translateX(24px);
+  background: var(--electric-violet);
+  box-shadow: 0 0 10px var(--electric-violet);
+}
+
+.chromatic-aberration {
+  text-shadow:
+    -1px 0 2px rgba(255, 0, 0, 0.3),
+    1px 0 2px rgba(0, 255, 255, 0.3);
+}
+
+.bio-pulse {
+  animation: bio-pulse 2s ease-in-out infinite;
+}
+
+@keyframes bio-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.bio-eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.bio-label {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+}
+
+.bio-main {
+  position: relative;
+  z-index: 10;
+  max-width: 1800px;
+  margin-inline: auto;
+  padding: 12rem 2.5rem 10rem;
+}
+
+.bio-hero {
+  max-width: 64rem;
+  margin-bottom: 10rem;
+  position: relative;
+  z-index: 20;
+}
+
+.bio-hero__title {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  line-height: 0.85;
+  margin: 0 0 3rem;
+}
+
+.bio-hero__copy {
+  font-size: 1.5rem;
+  color: var(--text-dim);
+  max-width: 48rem;
+  line-height: 1.625;
+  margin: 0 0 4rem;
+  font-weight: 300;
+}
+
+.bio-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.bio-hero__stat {
+  display: flex;
+  flex-direction: column;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.1);
+  padding-inline-start: 2rem;
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  grid-auto-rows: auto;
+}
+
+.bio-pad {
+  padding: 3rem;
+}
+
+.bio-pad-lg {
+  padding: 3rem;
+}
+
+.bio-span-4,
+.bio-span-5,
+.bio-span-6,
+.bio-span-7,
+.bio-span-8,
+.bio-span-12 {
+  grid-column: span 1;
+}
+
+.bio-bar {
+  margin-top: 4rem;
+  width: 100%;
+  height: 0.25rem;
+  background: var(--shadow-dark);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bio-bar__fill {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  width: 85%;
+  background: linear-gradient(to right, var(--electric-violet), var(--amber-glow));
+}
+
+.bio-bar__fill--blur {
+  filter: blur(2px);
+}
+
+@media (min-width: 768px) {
+  .bio-hero__title {
+    font-size: 8.5rem;
+  }
+
+  .bio-pad-lg {
+    padding: 4rem;
+  }
+}
+
+@container (min-width: 64rem) {
+  .bio-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .bio-span-4 {
+    grid-column: span 4;
+  }
+  .bio-span-5 {
+    grid-column: span 5;
+  }
+  .bio-span-6 {
+    grid-column: span 6;
+  }
+  .bio-span-7 {
+    grid-column: span 7;
+  }
+  .bio-span-8 {
+    grid-column: span 8;
+  }
+  .bio-span-12 {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 900px) {
+  .bio-main {
+    padding: 9rem 1.5rem 6rem;
+  }
+
+  .bio-hero {
+    margin-bottom: 4rem;
+  }
+
+  .bio-hero__title {
+    font-size: clamp(3rem, 14vw, 5rem);
+  }
+
+  .bio-hero__copy {
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .bio-portal {
+    width: 80vw;
+    opacity: 0.55;
+  }
+}
+
+@media (max-width: 640px) {
+  .bio-pad,
+  .bio-pad-lg {
+    padding: 1.75rem;
+  }
+
+  .bio-hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .bio-hero__stat {
+    border-inline-start: none;
+    padding-inline-start: 0;
+    border-block-start: 1px solid rgba(255, 255, 255, 0.1);
+    padding-block-start: 1.25rem;
+    width: 100%;
+  }
+
+  .bio-elastic-btn {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .synaptic-shimmer,
+  .bio-pulse,
+  .organic-volume,
+  .bio-elastic-btn,
+  .bio-portal {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+}

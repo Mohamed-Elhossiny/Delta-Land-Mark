@@ -9,12 +9,18 @@
     },
     "header": {
       "langSwitch": "English",
-      "menu": "القائمة"
+      "menu": "القائمة",
+      "brand": "دلتا لاند مارك",
+      "tagline": "وجهة متعددة الاستخدامات",
+      "themeToggle": "تبديل المظهر الفاتح والداكن"
     },
     "hero": {
       "scroll": "مرر",
       "eyebrow": "مشروع متعدد الاستخدامات في قلب الدلتا",
       "title": "تجربة متكاملة في موقع استراتيجي مميز",
+      "displayLine1": "تجربة",
+      "displayLine2": "متكاملة.",
+      "statUnit": "م²",
       "playToggle": "تشغيل أو إيقاف الفيديو"
     },
     "footer": {
@@ -34,6 +40,10 @@
       "contactNow": "تواصل معنا الآن",
       "viewLocation": "موقعنا",
       "facebook": "صفحة الفيسبوك"
+    },
+    "theme": {
+      "aboutEyebrow": "المشروع",
+      "locationEyebrow": "الموقع"
     },
     "common": {
       "backToTop": "العودة للأعلى"

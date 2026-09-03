@@ -1,16 +1,15 @@
 import { Component, input, output, inject, HostListener, signal } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
-import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ContentService } from '../../core/services/content';
 import { LocaleService } from '../../core/services/locale';
-import { HEADER_LOGO_PATH } from '../../shared/utils/asset-url';
+import { ThemeService } from '../../core/services/theme';
 import { TranslatePipe } from '../../shared/pipes/translate-pipe';
 import { map } from 'rxjs';
 
 @Component({
   selector: 'app-header',
-  imports: [AsyncPipe, RouterLink, NgOptimizedImage, TranslatePipe],
+  imports: [AsyncPipe, RouterLink, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
@@ -21,12 +20,9 @@ export class Header {
 
   private readonly content = inject(ContentService);
   readonly locale = inject(LocaleService);
+  private readonly theme = inject(ThemeService);
 
   readonly scrolled = signal(false);
-  readonly logoSrc = HEADER_LOGO_PATH;
-  readonly logoWidth = 192;
-  readonly logoHeight = 272;
-
   readonly whatsapp$ = this.content.getSiteContent().pipe(map((c) => c.contact.whatsapp));
 
   @HostListener('window:scroll')
@@ -36,5 +32,9 @@ export class Header {
 
   toggleLocale(): void {
     this.locale.toggle();
+  }
+
+  toggleTheme(): void {
+    this.theme.toggle();
   }
 }

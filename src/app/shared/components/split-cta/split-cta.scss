@@ -1,16 +1,18 @@
 .split-cta {
   display: inline-flex;
   align-items: stretch;
-  border-radius: var(--radius-cta);
+  border-radius: 999px;
   overflow: hidden;
-  transition: transform var(--dur-brand) var(--ease-brand);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(40px);
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.15),
+    inset 0 -4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
   &:hover {
-    transform: translateY(-2px);
-
-    .split-cta__arrow {
-      background: var(--color-primary-hover);
-    }
+    transform: scale(1.03) translateY(-2px);
+    border-radius: 1rem;
   }
 }
 
@@ -20,15 +22,14 @@
   align-items: center;
   justify-content: center;
   padding: 0.95em 1.35em;
-  background: var(--color-primary);
-  color: var(--color-primary-fg);
+  color: var(--text-core);
   font-weight: 500;
+  background: transparent;
 }
 
 .split-cta__arrow {
   padding-inline: 1.1em;
-  border-inline-start: 1px solid rgba(255, 255, 255, 0.25);
-  transition: background var(--dur-brand) var(--ease-brand);
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 html[dir='ltr'] .split-cta__arrow {

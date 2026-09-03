@@ -9,8 +9,12 @@
   display: grid;
   place-items: center;
   padding: 1.5em;
-  background: #fff;
-  border-radius: var(--radius-soft);
+  background: linear-gradient(160deg, var(--surface-top), var(--surface-bottom));
+  backdrop-filter: blur(40px);
+  border-radius: 2rem;
+  box-shadow:
+    inset 1px 1px 3px var(--shadow-light),
+    inset -2px -2px 12px var(--shadow-dark);
 
   img {
     max-height: 4.5em;

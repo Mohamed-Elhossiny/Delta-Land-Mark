@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { FluidNodeDirective } from '../../directives/fluid-node';
 
 @Component({
   selector: 'app-primary-cta',
-  imports: [RouterLink],
+  imports: [RouterLink, FluidNodeDirective],
   templateUrl: './primary-cta.html',
   styleUrl: './primary-cta.scss',
 })

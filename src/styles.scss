@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@use './styles/bio-theme';
 
 :root {
-  --font-latin: 'Montserrat', 'Segoe UI', sans-serif;
+  --font-latin: 'Inter', 'Segoe UI', sans-serif;
   --font-arabic: 'Readex Pro', 'IBM Plex Sans Arabic', Tahoma, sans-serif;
   --font-body: var(--font-arabic);
 
-  --color-bg: #ffffff;
-  --color-bg-muted: #f6f6f6;
-  --color-bg-warm: #fef1e4;
-  --color-bg-inverse: #140b06;
-  --color-fg: #1c0d0a;
-  --color-fg-muted: #353535;
-  --color-fg-on-dark: #ffffff;
-  --color-fg-on-dark-muted: rgba(255, 255, 255, 0.55);
-  --color-primary: #ff6210;
-  --color-primary-hover: #f15808;
-  --color-primary-fg: #ffffff;
+  --color-bg: var(--obsidian);
+  --color-bg-muted: var(--surface-bottom);
+  --color-bg-warm: var(--surface-top);
+  --color-bg-inverse: var(--obsidian);
+  --color-fg: var(--text-core);
+  --color-fg-muted: var(--text-dim);
+  --color-fg-on-dark: var(--text-core);
+  --color-fg-on-dark-muted: var(--text-dim);
+  --color-primary: var(--amber-glow);
+  --color-primary-hover: var(--electric-violet);
+  --color-primary-fg: var(--obsidian);
   --color-whatsapp: #08a521;
-  --color-border: #eeeeee;
+  --color-border: rgba(255, 255, 255, 0.08);
   --color-border-on-dark: rgba(255, 255, 255, 0.2);
 
   --radius-cta: 2em;
@@ -32,7 +32,7 @@
   --100svh: 100svh;
   --100dvh: 100dvh;
   --fluid-root: clamp(14px, 0.9375vw, 18px);
-  --header-height: 5.25rem;
+  --header-height: 6.5rem;
   --touch-min: 2.75rem;
 }
 
@@ -67,9 +67,9 @@ body {
   min-height: var(--100dvh);
   font-family: var(--font-body);
   font-weight: 400;
-  color: var(--color-fg);
-  background: var(--color-bg);
-  transition: background var(--dur-brand) var(--ease-brand);
+  color: var(--text-core);
+  background: var(--obsidian);
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   overflow-x: clip;
   scrollbar-width: none;
   -ms-overflow-style: none;

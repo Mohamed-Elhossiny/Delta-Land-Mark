@@ -9,12 +9,18 @@
     },
     "header": {
       "langSwitch": "العربية",
-      "menu": "Menu"
+      "menu": "Menu",
+      "brand": "DELTA LANDMARK",
+      "tagline": "Mixed-Use Destination",
+      "themeToggle": "Toggle light and dark theme"
     },
     "hero": {
       "scroll": "Scroll",
       "eyebrow": "A mixed-use destination in the heart of the Delta",
       "title": "An integrated experience in a prime strategic location",
+      "displayLine1": "Integrated",
+      "displayLine2": "Experience.",
+      "statUnit": "sqm",
       "playToggle": "Play or pause background video"
     },
     "footer": {
@@ -34,6 +40,10 @@
       "contactNow": "Contact us now",
       "viewLocation": "Our location",
       "facebook": "Facebook page"
+    },
+    "theme": {
+      "aboutEyebrow": "The Project",
+      "locationEyebrow": "Location"
     },
     "common": {
       "backToTop": "Back to top"
