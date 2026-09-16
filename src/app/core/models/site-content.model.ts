@@ -39,6 +39,10 @@ export interface SiteContent {
     whatsapp: string;
     facebook: string;
     maps: string;
+    emails: Array<{
+      address: string;
+      name: LocalizedText;
+    }>;
     address: LocalizedText;
   };
   navigation: NavItem[];

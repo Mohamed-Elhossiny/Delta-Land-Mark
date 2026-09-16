@@ -1,16 +1,17 @@
 <div
   class="contact-fab"
   [class.contact-fab--open]="open()"
+  [class.contact-fab--emails]="emailsOpen()"
   (click)="$event.stopPropagation()"
 >
   <span class="contact-fab__spot" aria-hidden="true"></span>
   @if (vm$ | async; as vm) {
-    <div class="contact-fab__items" [attr.aria-hidden]="!open()">
+    <div class="contact-fab__items" [attr.aria-hidden]="!open() || emailsOpen()">
       <a
         class="contact-fab__item"
         style="--i: 0"
         [href]="vm.phoneHref"
-        [attr.tabindex]="open() ? 0 : -1"
+        [attr.tabindex]="open() && !emailsOpen() ? 0 : -1"
         [attr.aria-label]="'footer.phone' | translate"
       >
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
@@ -27,7 +28,7 @@
         [href]="vm.whatsapp"
         target="_blank"
         rel="noopener noreferrer"
-        [attr.tabindex]="open() ? 0 : -1"
+        [attr.tabindex]="open() && !emailsOpen() ? 0 : -1"
         [attr.aria-label]="'footer.whatsapp' | translate"
       >
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
@@ -44,7 +45,7 @@
         [href]="vm.facebook"
         target="_blank"
         rel="noopener noreferrer"
-        [attr.tabindex]="open() ? 0 : -1"
+        [attr.tabindex]="open() && !emailsOpen() ? 0 : -1"
         [attr.aria-label]="'footer.facebook' | translate"
       >
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
@@ -61,7 +62,7 @@
         [href]="vm.maps"
         target="_blank"
         rel="noopener noreferrer"
-        [attr.tabindex]="open() ? 0 : -1"
+        [attr.tabindex]="open() && !emailsOpen() ? 0 : -1"
         [attr.aria-label]="'footer.maps' | translate"
       >
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
@@ -71,6 +72,45 @@
           />
         </svg>
       </a>
+
+      <button
+        class="contact-fab__item"
+        style="--i: 4"
+        type="button"
+        (click)="openEmails(); $event.stopPropagation()"
+        [attr.tabindex]="open() && !emailsOpen() ? 0 : -1"
+        [attr.aria-label]="'footer.openEmails' | translate"
+      >
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path
+            fill="currentColor"
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <div
+      class="contact-fab__items contact-fab__items--emails"
+      [attr.aria-hidden]="!open() || !emailsOpen()"
+    >
+      @for (email of vm.emails; track email.address; let i = $index) {
+        <a
+          class="contact-fab__item"
+          [style.--i]="i"
+          [href]="'mailto:' + email.address"
+          [attr.tabindex]="open() && emailsOpen() ? 0 : -1"
+          [attr.aria-label]="(email.name | localize) + ' — ' + email.address"
+        >
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+          <span class="contact-fab__label">{{ email.name | localize }}</span>
+        </a>
+      }
     </div>
   }
 

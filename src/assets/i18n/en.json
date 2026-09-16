@@ -31,7 +31,9 @@
       "phone": "Call us",
       "whatsapp": "WhatsApp",
       "facebook": "Facebook",
-      "maps": "Location on map"
+      "maps": "Location on map",
+      "email": "Email",
+      "openEmails": "Choose an email"
     },
     "integrated": {
       "title": "Integrated Experience",

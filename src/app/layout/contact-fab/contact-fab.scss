@@ -40,7 +40,7 @@
 
 .contact-fab--open .contact-fab__spot {
   width: 10rem;
-  height: 22rem;
+  height: 26rem;
   bottom: 0;
   translate: -50% 0;
   border-radius: 5rem;
@@ -63,12 +63,23 @@
   pointer-events: none;
 }
 
-.contact-fab--open .contact-fab__items {
+.contact-fab--open .contact-fab__items:not(.contact-fab__items--emails) {
   pointer-events: auto;
+}
+
+.contact-fab--open.contact-fab--emails .contact-fab__items:not(.contact-fab__items--emails) {
+  pointer-events: none;
+}
+
+.contact-fab--open.contact-fab--emails .contact-fab__items--emails {
+  pointer-events: auto;
+  align-items: flex-start;
+  inset-inline-start: 0;
 }
 
 .contact-fab__toggle,
 .contact-fab__item {
+  position: relative;
   width: 3.1rem;
   height: 3.1rem;
   display: grid;
@@ -160,9 +171,32 @@
   transition-delay: calc(var(--i, 0) * 40ms);
 }
 
-.contact-fab--open .contact-fab__item {
+.contact-fab--open .contact-fab__items:not(.contact-fab__items--emails) .contact-fab__item {
   opacity: 1;
   transform: none;
+}
+
+.contact-fab--open.contact-fab--emails .contact-fab__items:not(.contact-fab__items--emails) .contact-fab__item {
+  opacity: 0;
+  transform: translateY(0.75rem) scale(0.75);
+}
+
+.contact-fab--open.contact-fab--emails .contact-fab__items--emails .contact-fab__item {
+  opacity: 1;
+  transform: none;
+  width: auto;
+  min-width: 3.1rem;
+  padding-inline: 0.85rem 1.05rem;
+  border-radius: 999px;
+  display: flex;
+  gap: 0.55rem;
+}
+
+.contact-fab__label {
+  white-space: nowrap;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .contact-fab__toggle svg,

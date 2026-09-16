@@ -3,16 +3,18 @@ import { AsyncPipe } from '@angular/common';
 import { map } from 'rxjs';
 import { ContentService } from '../../core/services/content';
 import { TranslatePipe } from '../../shared/pipes/translate-pipe';
+import { LocalizePipe } from '../../shared/pipes/localize-pipe';
 
 @Component({
   selector: 'app-contact-fab',
-  imports: [AsyncPipe, TranslatePipe],
+  imports: [AsyncPipe, TranslatePipe, LocalizePipe],
   templateUrl: './contact-fab.html',
   styleUrl: './contact-fab.scss',
 })
 export class ContactFab {
   private readonly content = inject(ContentService);
   readonly open = signal(false);
+  readonly emailsOpen = signal(false);
 
   readonly vm$ = this.content.getSiteContent().pipe(
     map((site) => ({
@@ -20,15 +22,33 @@ export class ContactFab {
       whatsapp: site.contact.whatsapp,
       facebook: site.contact.facebook,
       maps: site.contact.maps,
+      emails: site.contact.emails ?? [],
     }))
   );
 
   toggle(): void {
+    if (this.open() && this.emailsOpen()) {
+      this.emailsOpen.set(false);
+      return;
+    }
+
     this.open.update((value) => !value);
+    if (!this.open()) {
+      this.emailsOpen.set(false);
+    }
+  }
+
+  openEmails(): void {
+    this.emailsOpen.set(true);
+  }
+
+  closeEmails(): void {
+    this.emailsOpen.set(false);
   }
 
   close(): void {
     this.open.set(false);
+    this.emailsOpen.set(false);
   }
 
   @HostListener('document:click')
@@ -38,6 +58,10 @@ export class ContactFab {
 
   @HostListener('document:keydown.escape')
   onEscape(): void {
+    if (this.emailsOpen()) {
+      this.closeEmails();
+      return;
+    }
     this.close();
   }
 

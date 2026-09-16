@@ -86,6 +86,36 @@
     "whatsapp": "https://wa.me/201210015100",
     "facebook": "https://www.facebook.com/Deltalandmark00",
     "maps": "https://maps.app.goo.gl/3kNvydmH61fcdRfQ9",
+    "emails": [
+      {
+        "address": "engineering@deltalandmark.com",
+        "name": {
+          "ar": "الهندسة",
+          "en": "Engineering"
+        }
+      },
+      {
+        "address": "office@deltalandmark.com",
+        "name": {
+          "ar": "المكتب",
+          "en": "Office"
+        }
+      },
+      {
+        "address": "sales@deltalandmark.com",
+        "name": {
+          "ar": "المبيعات",
+          "en": "Sales"
+        }
+      },
+      {
+        "address": "info@deltalandmark.com",
+        "name": {
+          "ar": "الاستعلامات",
+          "en": "Inquiries"
+        }
+      }
+    ],
     "address": {
       "ar": "ك ٦٤ طريق مصر الاسكندرية الزراعى - بجوار جامعة المنوفية الاهلية"
     }
