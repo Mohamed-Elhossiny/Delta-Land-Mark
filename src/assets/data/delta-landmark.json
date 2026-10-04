@@ -88,31 +88,31 @@
     "maps": "https://maps.app.goo.gl/3kNvydmH61fcdRfQ9",
     "emails": [
       {
-        "address": "engineering@deltalandmark.com",
+        "address": "admin@deltalandinvest.com",
+        "name": {
+          "ar": "الإداره",
+          "en": "Adminstration"
+        }
+      },
+      {
+        "address": "engineering@deltalandinvest.com",
         "name": {
           "ar": "الهندسة",
           "en": "Engineering"
         }
       },
       {
-        "address": "office@deltalandmark.com",
+        "address": "marketing@deltalandinvest.com",
         "name": {
-          "ar": "المكتب",
-          "en": "Office"
+          "ar": "التسويق",
+          "en": "Marketing"
         }
       },
       {
-        "address": "sales@deltalandmark.com",
+        "address": "sales@deltalandinvest.com",
         "name": {
           "ar": "المبيعات",
           "en": "Sales"
-        }
-      },
-      {
-        "address": "info@deltalandmark.com",
-        "name": {
-          "ar": "الاستعلامات",
-          "en": "Inquiries"
         }
       }
     ],
@@ -515,15 +515,6 @@
             "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
             "originalFilename": "44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
             "alt": "44027548 2201662006513500 1850313580889505792 n 98818c77 464e 4c63 84a3 95a7b4730846"
-          }
-        },
-        {
-          "name": "acdb06c9 6c7b 46c9 98b8 7ed1197d2dbc",
-          "logo": {
-            "local": "assets/brands/012-acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
-            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
-            "originalFilename": "acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
-            "alt": "acdb06c9 6c7b 46c9 98b8 7ed1197d2dbc"
           }
         },
         {
@@ -1053,14 +1044,6 @@
       "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Auto-Samir-Rayan-15144-372x400-1.png",
       "originalFilename": "Auto-Samir-Rayan-15144-372x400-1.png",
       "title": "auto samir rayan 15144 372&#215;400"
-    },
-    {
-      "id": 1689,
-      "category": "misc",
-      "local": "assets/brands/012-acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
-      "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
-      "originalFilename": "acdb06c9-6c7b-46c9-98b8-7ed1197d2dbc.jpg",
-      "title": "acdb06c9 6c7b 46c9 98b8 7ed1197d2dbc"
     },
     {
       "id": 1688,
