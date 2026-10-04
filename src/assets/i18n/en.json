@@ -47,7 +47,9 @@
     "common": {
       "backToTop": "Back to top",
       "openContact": "Open contact options",
-      "closeContact": "Close contact options"
+      "closeContact": "Close contact options",
+      "previous": "Previous",
+      "next": "Next"
     }
   },
   "content": {

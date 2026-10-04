@@ -47,7 +47,9 @@
     "common": {
       "backToTop": "العودة للأعلى",
       "openContact": "فتح خيارات التواصل",
-      "closeContact": "إغلاق خيارات التواصل"
+      "closeContact": "إغلاق خيارات التواصل",
+      "previous": "السابق",
+      "next": "التالي"
     }
   }
 }

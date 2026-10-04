@@ -2,12 +2,51 @@
   <app-page-hero [title]="vm.page.title" [subtitle]="vm.page.subtitle" [imageUrl]="vm.heroImage" />
 
   <app-section-shell tone="gray">
-    <div class="brand-grid">
-      @for (brand of vm.brands; track brand.name; let i = $index) {
-        <article class="brand-grid__item" appScrollReveal [delay]="i * 60">
-          <img [src]="brand.logoSrc" [alt]="brand.logo.alt || brand.name" />
-        </article>
-      }
+    <div class="brand-carousel">
+      <div
+        #rail
+        class="brand-rail"
+        tabindex="0"
+        role="region"
+        [attr.aria-label]="vm.page.title.ar || vm.page.title.en"
+        (scroll)="onScroll(rail)"
+        (pointerdown)="onPointerDown($event, rail)"
+        (pointermove)="onPointerMove($event, rail)"
+        (pointerup)="onPointerUp(rail)"
+        (pointercancel)="onPointerUp(rail)"
+        (keydown)="onKeydown($event, rail)"
+      >
+        @for (brand of vm.brands; track brand.name; let i = $index) {
+          <article class="brand-rail__item" appScrollReveal [delay]="i * 40">
+            <img [src]="brand.logoSrc" [alt]="brand.logo.alt || brand.name" draggable="false" />
+          </article>
+        }
+      </div>
+
+      <div class="brand-carousel__controls">
+        <button
+          type="button"
+          class="brand-carousel__nav"
+          (click)="scrollStep(rail, false)"
+          [disabled]="atStart()"
+          [attr.aria-label]="'common.previous' | translate"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M10 3.5 5.5 8 10 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="brand-carousel__nav"
+          (click)="scrollStep(rail, true)"
+          [disabled]="atEnd()"
+          [attr.aria-label]="'common.next' | translate"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M6 3.5 10.5 8 6 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </app-section-shell>
 }
