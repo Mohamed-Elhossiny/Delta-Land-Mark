@@ -220,7 +220,13 @@ body.loader-active .bg-video-container__veil {
   font-family: var(--font-tight);
   font-size: 15px;
   color: white;
+  direction: ltr;
+  unicode-bidi: isolate;
   text-align: start;
+}
+
+html[dir='rtl'] .mt-hero__phone {
+  text-align: right;
 }
 
 .mt-hero__meta {

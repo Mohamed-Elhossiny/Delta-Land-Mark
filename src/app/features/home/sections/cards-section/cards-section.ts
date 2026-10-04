@@ -13,7 +13,7 @@ const CARD_BACKGROUNDS = [
   '/assets/integrated-experience/004-Screenshot-2026-07-13-150255.png',
   '/assets/photos/044-Whisk_bdb3a72ebd8890ab0e943a9b7466a884dr.png',
   '/assets/floor-plan/015-Screenshot-2026-06-24-005729.png',
-  '/assets/brands/004-preview-928x522-1.jpg',
+  '/assets/home/075-Pic-45.jpg',
   '/assets/home/076-Pic-42.jpg',
 ] as const;
 

@@ -482,57 +482,87 @@
       },
       "items": [
         {
-          "name": "4000db d90ecb3545ec426f8b563a7bba0898famv2 scaled",
+          "name": "Abo El Seed",
           "logo": {
-            "local": "assets/brands/008-4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
-            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
-            "originalFilename": "4000db_d90ecb3545ec426f8b563a7bba0898famv2-scaled.png",
-            "alt": "4000db d90ecb3545ec426f8b563a7bba0898fa~mv2"
+            "local": "assets/brands/aboelseed.png",
+            "alt": "Abo El Seed"
           }
         },
         {
-          "name": "preview 928x522 1",
+          "name": "Abu Auf",
           "logo": {
-            "local": "assets/brands/009-preview-928x522-1.jpg",
-            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/preview-928x522-1.jpg",
-            "originalFilename": "preview-928x522-1.jpg",
-            "alt": "preview 928×522"
+            "local": "assets/brands/abuauf.png",
+            "alt": "Abu Auf"
           }
         },
         {
-          "name": "10 3f88e0ce 11b7 4a85 99fb b0d0ac3e9b6f e",
+          "name": "Activ",
           "logo": {
-            "local": "assets/brands/010-10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
-            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
-            "originalFilename": "10_3f88e0ce-11b7-4a85-99fb-b0d0ac3e9b6f-e1782251347699.png",
-            "alt": "10 3f88e0ce 11b7 4a85 99fb b0d0ac3e9b6f"
+            "local": "assets/brands/active.png",
+            "alt": "Activ"
           }
         },
         {
-          "name": "44027548   n 98818c77 464e 4c63 84a3 95a7b4730846",
+          "name": "Al Gabry",
           "logo": {
-            "local": "assets/brands/011-44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
-            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
-            "originalFilename": "44027548_2201662006513500_1850313580889505792_n_98818c77-464e-4c63-84a3-95a7b4730846.webp",
-            "alt": "44027548 2201662006513500 1850313580889505792 n 98818c77 464e 4c63 84a3 95a7b4730846"
+            "local": "assets/brands/algabry.png",
+            "alt": "Al Gabry"
           }
         },
         {
-          "name": "Auto Samir Rayan 15144 372x400 1",
+          "name": "Auto Samir Rayan",
           "logo": {
-            "local": "assets/brands/013-Auto-Samir-Rayan-15144-372x400-1.png",
-            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Auto-Samir-Rayan-15144-372x400-1.png",
-            "originalFilename": "Auto-Samir-Rayan-15144-372x400-1.png",
-            "alt": "auto samir rayan 15144 372×400"
+            "local": "assets/brands/autp.png",
+            "alt": "Auto Samir Rayan"
           }
         },
         {
-          "name": "485304498   n e",
+          "name": "Beit El Gomla",
           "logo": {
-            "local": "assets/brands/014-485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
-            "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
-            "originalFilename": "485304498_9316545665094427_1108248781534278428_n-e1782251363530.jpg",
-            "alt": "485304498 9316545665094427 1108248781534278428 n"
+            "local": "assets/brands/baitelgomlla.png",
+            "alt": "Beit El Gomla"
+          }
+        },
+        {
+          "name": "Haj Arafa",
+          "logo": {
+            "local": "assets/brands/hajArafa.png",
+            "alt": "Haj Arafa"
+          }
+        },
+        {
+          "name": "Le Voile",
+          "logo": {
+            "local": "assets/brands/levolie.png",
+            "alt": "Le Voile"
+          }
+        },
+        {
+          "name": "Mini Town Team",
+          "logo": {
+            "local": "assets/brands/minitownteam.png",
+            "alt": "Mini Town Team"
+          }
+        },
+        {
+          "name": "Molo",
+          "logo": {
+            "local": "assets/brands/molo.png",
+            "alt": "Molo"
+          }
+        },
+        {
+          "name": "Nissan",
+          "logo": {
+            "local": "assets/brands/nissan.png",
+            "alt": "Nissan"
+          }
+        },
+        {
+          "name": "Town Team",
+          "logo": {
+            "local": "assets/brands/townteam.png",
+            "alt": "Town Team"
           }
         }
       ]
