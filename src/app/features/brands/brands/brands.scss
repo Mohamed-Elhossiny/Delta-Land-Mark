@@ -33,6 +33,7 @@
   overflow-y: hidden;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
   cursor: grab;
   scrollbar-width: none;
@@ -42,9 +43,13 @@
     display: none;
   }
 
+  &.is-dragging,
+  &.is-animating {
+    scroll-snap-type: none;
+  }
+
   &.is-dragging {
     cursor: grabbing;
-    scroll-snap-type: none;
     user-select: none;
   }
 }

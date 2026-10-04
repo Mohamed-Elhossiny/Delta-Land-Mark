@@ -2,7 +2,7 @@
   <app-page-hero [title]="vm.page.title" [subtitle]="vm.page.subtitle" [imageUrl]="vm.heroImage" />
 
   <app-section-shell tone="gray">
-    <div class="brand-carousel">
+    <div class="brand-carousel" (pointerenter)="onUserHold()" (pointerleave)="onUserRelease(rail)">
       <div
         #rail
         class="brand-rail"
@@ -27,7 +27,7 @@
         <button
           type="button"
           class="brand-carousel__nav"
-          (click)="scrollStep(rail, false)"
+          (click)="onControl(rail, false)"
           [disabled]="atStart()"
           [attr.aria-label]="'common.previous' | translate"
         >
@@ -38,7 +38,7 @@
         <button
           type="button"
           class="brand-carousel__nav"
-          (click)="scrollStep(rail, true)"
+          (click)="onControl(rail, true)"
           [disabled]="atEnd()"
           [attr.aria-label]="'common.next' | translate"
         >
