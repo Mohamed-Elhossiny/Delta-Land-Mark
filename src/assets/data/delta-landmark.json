@@ -410,10 +410,10 @@
         {
           "id": "entertainment",
           "title": {
-            "ar": "ترفيهي"
+            "ar": "منطقة ترفيهية"
           },
           "description": {
-            "ar": "مساحات ترفيهية مصممة لتمنح جميع أفراد الأسرة أوقاتًا مليئة بالمرح وجهة تجمع بين التسوق والترفيه في تجربة واحدة"
+            "ar": "وجهة ترفيهية متكاملة تضم مجموعة متنوعة من الألعاب والأنشطة، لتوفير أوقات ممتعة للعائلات والأطفال في قلب المشروع."
           },
           "image": {
             "local": "assets/integrated-experience/004-Screenshot-2026-07-13-150255.png",
@@ -430,7 +430,7 @@
             "ar": "بيئة تعليمية حديثة توفر تجربة تعليم متكاملة داخل مجتمع متطور تعليم عالي الجودة يضع مستقبل الطلاب في مقدمة أولوياته"
           },
           "image": {
-            "local": "assets/integrated-experience/005-Continue_the_scene_Arabic_text_202607141328.jpeg",
+            "local": "assets/integrated-experience/school.png",
             "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/Continue_the_scene_Arabic_text_202607141328.jpeg",
             "originalFilename": "Continue_the_scene_Arabic_text_202607141328.jpeg"
           }
@@ -438,10 +438,10 @@
         {
           "id": "medical",
           "title": {
-            "ar": "طبي"
+            "ar": "سينما"
           },
           "description": {
-            "ar": "خدمات طبية متكاملة داخل بيئة حديثة توفر الراحة وسهولة الوصول نخبة من التخصصات لتلبية احتياجاتك الصحية بكفاءة"
+            "ar": "تجربة سينمائية متكاملة داخل المشروع، توفر للسكان أحدث وسائل الترفيه في أجواء مريحة ومميزة دون الحاجة للذهاب بعيدًا."
           },
           "image": {
             "local": "assets/integrated-experience/006-Empty_cinema_interior_scene_2K_202607141307-scaled.jpeg",
@@ -452,10 +452,10 @@
         {
           "id": "hotel",
           "title": {
-            "ar": "فندقي"
+            "ar": "قاعة مناسبات"
           },
           "description": {
-            "ar": "إقامة مريحة بمستوى راقٍ تجمع بين الفخامة وسهولة الوصول تجربة ضيافة متكاملة تلائم رجال الأعمال والزوار"
+            "ar": "مساحة أنيقة ومتكاملة لاستضافة حفلات الزفاف والمناسبات الخاصة، وسط أجواء راقية تمنح السكان تجربة مميزة بالقرب من المنزل."
           },
           "image": {
             "local": "assets/integrated-experience/007-Empty_open-air_wedding_hall_2K_202607141309-scaled.jpeg",
