@@ -13,13 +13,18 @@
   align-items: end;
   color: #fff;
   isolation: isolate;
+  box-shadow:
+    0 0.75rem 1.5rem rgba(0, 0, 0, 0.45),
+    0 1.75rem 3.5rem rgba(0, 0, 0, 0.55);
   transition:
     transform var(--dur-brand) var(--ease-brand),
     box-shadow var(--dur-brand) var(--ease-brand);
 
   &:hover {
     transform: translateY(-0.35rem);
-    box-shadow: 0 1.25rem 2.5rem rgba(20, 11, 6, 0.22);
+    box-shadow:
+      0 1rem 2rem rgba(0, 0, 0, 0.5),
+      0 2.25rem 4rem rgba(0, 0, 0, 0.6);
 
     .cards__image {
       transform: scale(1.08);

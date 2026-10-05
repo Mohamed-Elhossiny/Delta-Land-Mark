@@ -5,6 +5,28 @@
   align-items: center;
 }
 
+.categories__copy {
+  h2 {
+    text-shadow:
+      0 0 28px rgba(0, 0, 0, 0.75),
+      0 2px 4px rgba(0, 0, 0, 0.95),
+      0 6px 24px rgba(0, 0, 0, 0.65);
+  }
+
+  .lead,
+  .categories__list span {
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.9),
+      0 4px 16px rgba(0, 0, 0, 0.7);
+  }
+
+  .categories__list strong {
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.9),
+      0 4px 16px rgba(0, 0, 0, 0.55);
+  }
+}
+
 .categories__list {
   margin-top: 2em;
   display: grid;
@@ -25,6 +47,9 @@
   border-radius: var(--radius-soft);
   overflow: hidden;
   min-height: 24em;
+  box-shadow:
+    0 0.75rem 1.5rem rgba(0, 0, 0, 0.45),
+    0 1.75rem 3.5rem rgba(0, 0, 0, 0.55);
 
   img {
     width: 100%;

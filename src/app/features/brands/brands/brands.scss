@@ -37,7 +37,8 @@
   -webkit-overflow-scrolling: touch;
   cursor: grab;
   scrollbar-width: none;
-  padding-block: 0.15rem;
+  padding-block: 1.25rem 3.25rem;
+  padding-inline: 1.25rem;
 
   &::-webkit-scrollbar {
     display: none;
@@ -64,6 +65,9 @@
   background: #fff;
   border-radius: var(--radius-soft);
   overflow: hidden;
+  box-shadow:
+    0 0.75rem 1.5rem rgba(0, 0, 0, 0.45),
+    0 1.75rem 3.5rem rgba(0, 0, 0, 0.55);
 
   img {
     width: 100%;
