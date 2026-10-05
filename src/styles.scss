@@ -183,8 +183,8 @@ ul {
 .reveal--right { transform: translateX(2.5rem); }
 .reveal--scale { transform: scale(0.94) translateY(1.25rem); }
 
-html[dir='rtl'] .reveal--left { transform: translateX(2.5rem); }
-html[dir='rtl'] .reveal--right { transform: translateX(-2.5rem); }
+html[dir='rtl'] .reveal--left:not(.reveal--visible) { transform: translateX(2.5rem); }
+html[dir='rtl'] .reveal--right:not(.reveal--visible) { transform: translateX(-2.5rem); }
 
 .reveal--visible {
   opacity: 1;
@@ -220,6 +220,8 @@ html.lenis.lenis-stopped {
     transition-duration: 0.01ms !important;
   }
 
+  html[dir='rtl'] .reveal.reveal--left,
+  html[dir='rtl'] .reveal.reveal--right,
   .reveal {
     opacity: 1;
     transform: none;
