@@ -4,9 +4,11 @@
   z-index: 9999;
   display: grid;
   place-items: center;
-  background: transparent;
+  background: rgb(0 0 0 / 0.94);
   color: var(--color-fg-on-dark);
-  transition: opacity 0.7s var(--ease-brand), visibility 0.7s;
+  transition:
+    opacity 0.7s var(--ease-brand),
+    visibility 0.7s;
 
   &--exit {
     opacity: 0;
@@ -15,17 +17,30 @@
   }
 }
 
-.loader__brand {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-
-.loader__logo {
-  display: block;
+.loader__mark {
   width: min(12rem, 56vw);
   height: auto;
-  margin-inline: auto;
-  mix-blend-mode: lighten;
+  overflow: visible;
   filter: drop-shadow(0 12px 28px rgb(0 0 0 / 0.45));
+
+  &--wait {
+    animation: loaderPulse 1.4s var(--ease-brand) infinite;
+  }
+}
+
+@keyframes loaderPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.72;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader__mark--wait {
+    animation: none;
+  }
 }

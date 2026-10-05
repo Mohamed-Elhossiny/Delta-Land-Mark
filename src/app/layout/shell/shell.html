@@ -1,5 +1,5 @@
-@if (!loaderDone()) {
-  <app-intro-loader (finished)="onLoaderFinished()" />
+@for (loader of loaders(); track loader.id) {
+  <app-intro-loader [variant]="loader.variant" (finished)="onLoaderFinished(loader.id)" />
 }
 
 <app-header

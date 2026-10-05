@@ -1,6 +1,6 @@
 import { Component, inject, OnDestroy, OnInit, signal } from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { filter } from 'rxjs';
+import { NavigationEnd, NavigationStart, Router, RouterOutlet } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { Header } from '../header/header';
 import { Footer } from '../footer/footer';
 import { BurgerMenu } from '../burger-menu/burger-menu';
@@ -9,6 +9,11 @@ import { BackToTop } from '../back-to-top/back-to-top';
 import { ContactFab } from '../contact-fab/contact-fab';
 import { routeAnimations } from '../../shared/animations/app.animations';
 import { SmoothScrollService } from '../../core/services/smooth-scroll';
+
+interface LoaderRun {
+  id: number;
+  variant: 'intro' | 'route';
+}
 
 @Component({
   selector: 'app-shell',
@@ -22,23 +27,47 @@ export class Shell implements OnInit, OnDestroy {
   private readonly smoothScroll = inject(SmoothScrollService);
 
   readonly menuOpen = signal(false);
-  readonly loaderDone = signal(false);
   readonly heroOverlay = signal(true);
+  readonly loaders = signal<LoaderRun[]>([{ id: 0, variant: 'intro' }]);
+
+  private introFinished = false;
+  private nextLoaderId = 1;
+  private navSub?: Subscription;
 
   ngOnInit(): void {
     this.playBackgroundVideo();
-    this.router.events
-      .pipe(filter((event) => event instanceof NavigationEnd))
-      .subscribe(() => this.smoothScroll.scrollToTop());
+    this.navSub = this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        this.onNavigate(event);
+        return;
+      }
+      if (event instanceof NavigationEnd) {
+        this.smoothScroll.scrollToTop();
+      }
+    });
   }
 
   ngOnDestroy(): void {
+    this.navSub?.unsubscribe();
     this.smoothScroll.stop();
   }
 
-  onLoaderFinished(): void {
-    this.loaderDone.set(true);
-    this.smoothScroll.start();
+  onLoaderFinished(id: number): void {
+    this.loaders.update((list) => list.filter((item) => item.id !== id));
+    if (!this.introFinished && id === 0) {
+      this.introFinished = true;
+      this.smoothScroll.start();
+    }
+  }
+
+  private onNavigate(event: NavigationStart): void {
+    if (!this.introFinished) return;
+    const current = this.router.url.split(/[?#]/)[0];
+    const next = event.url.split(/[?#]/)[0];
+    if (current === next) return;
+
+    const id = this.nextLoaderId++;
+    this.loaders.set([{ id, variant: 'route' }]);
   }
 
   toggleMenu(): void {
