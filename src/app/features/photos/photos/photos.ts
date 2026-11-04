@@ -17,7 +17,7 @@ export class Photos {
   readonly vm$ = inject(ContentService).getSiteContent().pipe(
     map((c) => ({
       page: c.pages.photos,
-      heroImage: resolveAsset(c.pages.photos.gallery[1] ?? c.pages.photos.gallery[0]),
+      heroImage: resolveAsset(c.pages.photos.gallery[0]),
       gallery: c.pages.photos.gallery.map((item) => ({
         ...item,
         src: resolveAsset(item),

@@ -19,10 +19,10 @@
     min-height: 16em;
   }
 
-  &:nth-child(1) { grid-column: span 7; }
-  &:nth-child(2) { grid-column: span 5; }
-  &:nth-child(3) { grid-column: span 5; }
-  &:nth-child(4) { grid-column: span 7; }
+  &:nth-child(4n + 1) { grid-column: span 7; }
+  &:nth-child(4n + 2) { grid-column: span 5; }
+  &:nth-child(4n + 3) { grid-column: span 5; }
+  &:nth-child(4n + 4) { grid-column: span 7; }
 }
 
 @media (max-width: 768px) {

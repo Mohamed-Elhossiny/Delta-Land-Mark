@@ -603,28 +603,104 @@
       },
       "gallery": [
         {
-          "local": "assets/photos/017-0-1.png",
-          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/0-1.png",
-          "originalFilename": "0-1.png",
-          "alt": "0 1"
+          "local": "assets/photos/021-facade-hero.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.04 PM (3).jpeg",
+          "alt": "Delta Landmark facade with the main sign and storefronts"
         },
         {
-          "local": "assets/photos/018-Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
-          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
-          "originalFilename": "Whisk_36153d35fd8c943ac1244c9087a6f7eadr-1.png",
-          "alt": "whisk 36153d35fd8c943ac1244c9087a6f7eadr"
+          "local": "assets/photos/022-facade-entrance.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (8).jpeg",
+          "alt": "Delta Landmark main entrance and stairs"
         },
         {
-          "local": "assets/photos/019-IMG20260228160000-scaled.jpg",
-          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/IMG20260228160000-scaled.jpg",
-          "originalFilename": "IMG20260228160000-scaled.jpg",
-          "alt": "oplus_32"
+          "local": "assets/photos/023-mall-street.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (7).jpeg",
+          "alt": "Delta Landmark mall along the street"
         },
         {
-          "local": "assets/photos/020-69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
-          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/07/69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
-          "originalFilename": "69bca5e3-0f13-4437-8cf5-4888b20d84a0.jpg",
-          "alt": "69bca5e3 0f13 4437 8cf5 4888b20d84a0"
+          "local": "assets/photos/024-nissan-corner.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (2).jpeg",
+          "alt": "Nissan and Beit El Gomla on the mall corner"
+        },
+        {
+          "local": "assets/photos/025-nissan-showroom.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.04 PM (4).jpeg",
+          "alt": "Nissan showroom entrance"
+        },
+        {
+          "local": "assets/photos/026-town-team-exterior.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.02 PM (1).jpeg",
+          "alt": "Town Team and Mini Town Team exterior"
+        },
+        {
+          "local": "assets/photos/027-town-team-mini-sign.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (6).jpeg",
+          "alt": "Town Team facade with Mini Town Team sign"
+        },
+        {
+          "local": "assets/photos/028-activ-storefront.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.02 PM.jpeg",
+          "alt": "Activ storefront inside the mall"
+        },
+        {
+          "local": "assets/photos/029-activ-entrance.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.02 PM (4).jpeg",
+          "alt": "Activ entrance with grand opening display"
+        },
+        {
+          "local": "assets/photos/030-activ-interior.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.02 PM (3).jpeg",
+          "alt": "Activ sportswear interior"
+        },
+        {
+          "local": "assets/photos/031-town-team-interior.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.04 PM (2).jpeg",
+          "alt": "Town Team shop interior"
+        },
+        {
+          "local": "assets/photos/032-mini-town-team.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM.jpeg",
+          "alt": "Mini Town Team kids store"
+        },
+        {
+          "local": "assets/photos/033-mini-town-team-girls.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (9).jpeg",
+          "alt": "Mini Town Team girls section"
+        },
+        {
+          "local": "assets/photos/034-beit-el-gomla-entrance.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (1).jpeg",
+          "alt": "Beit El Gomla entrance with Delta Landmark banner"
+        },
+        {
+          "local": "assets/photos/035-beit-el-gomla-checkout.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.02 PM (2).jpeg",
+          "alt": "Beit El Gomla checkout counters"
+        },
+        {
+          "local": "assets/photos/036-beit-el-gomla-restaurant.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.04 PM (1).jpeg",
+          "alt": "Beit El Gomla restaurant entrance"
+        },
+        {
+          "local": "assets/photos/037-magic-nuts.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (4).jpeg",
+          "alt": "Magic Nuts kiosk"
+        },
+        {
+          "local": "assets/photos/038-molo-entrance.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (3).jpeg",
+          "alt": "Molo restaurant entrance"
+        },
+        {
+          "local": "assets/photos/039-molo-dining.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.03 PM (5).jpeg",
+          "alt": "Molo dining area"
+        },
+        {
+          "local": "assets/photos/040-vr-pods.jpeg",
+          "originalFilename": "WhatsApp Image 2026-11-01 at 2.57.04 PM.jpeg",
+          "alt": "VR gaming pods in the mall"
         }
       ]
     }

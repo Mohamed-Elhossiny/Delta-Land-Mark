@@ -1,5 +1,9 @@
 @if (vm$ | async; as vm) {
-  <app-page-hero [title]="vm.page.title" [imageUrl]="vm.heroImage" />
+  <app-page-hero
+    [title]="vm.page.title"
+    [imageUrl]="vm.heroImage"
+    imagePosition="center 82%"
+  />
 
   <app-section-shell tone="dark" [padded]="false">
     <div class="gallery x-padding y-padding">
