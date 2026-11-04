@@ -46,7 +46,7 @@
       "wpMedia": 157,
       "uniqueAssetsDownloaded": 157,
       "brandCount": 7,
-      "floorPlanImages": 2,
+      "floorPlanImages": 1,
       "photoCount": 4
     }
   },
@@ -583,16 +583,9 @@
       },
       "images": [
         {
-          "local": "assets/floor-plan/015-Screenshot-2026-06-24-005729.png",
-          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Screenshot-2026-06-24-005729.png",
-          "originalFilename": "Screenshot-2026-06-24-005729.png",
-          "alt": "screenshot 2026 06 24 005729"
-        },
-        {
-          "local": "assets/floor-plan/016-Screenshot-2026-06-24-005707.png",
-          "originalUrl": "https://dev-delta-land-mark.pantheonsite.io/wp-content/uploads/2026/06/Screenshot-2026-06-24-005707.png",
-          "originalFilename": "Screenshot-2026-06-24-005707.png",
-          "alt": "screenshot 2026 06 24 005707"
+          "local": "assets/floor-plan/layout.png",
+          "originalFilename": "LAYOUT.pdf",
+          "alt": "المخطط العام للجامعة المنوفية الأهلية"
         }
       ]
     },
