@@ -482,17 +482,10 @@
       },
       "items": [
         {
-          "name": "Abo El Seed",
+          "name": "Beit El Gomla",
           "logo": {
-            "local": "assets/brands/aboelseed.png",
-            "alt": "Abo El Seed"
-          }
-        },
-        {
-          "name": "Abu Auf",
-          "logo": {
-            "local": "assets/brands/abuauf.png",
-            "alt": "Abu Auf"
+            "local": "assets/brands/baitelgomlla.png",
+            "alt": "Beit El Gomla"
           }
         },
         {
@@ -503,38 +496,10 @@
           }
         },
         {
-          "name": "Al Gabry",
+          "name": "Town Team",
           "logo": {
-            "local": "assets/brands/algabry.png",
-            "alt": "Al Gabry"
-          }
-        },
-        {
-          "name": "Auto Samir Rayan",
-          "logo": {
-            "local": "assets/brands/autp.png",
-            "alt": "Auto Samir Rayan"
-          }
-        },
-        {
-          "name": "Beit El Gomla",
-          "logo": {
-            "local": "assets/brands/baitelgomlla.png",
-            "alt": "Beit El Gomla"
-          }
-        },
-        {
-          "name": "Haj Arafa",
-          "logo": {
-            "local": "assets/brands/hajArafa.png",
-            "alt": "Haj Arafa"
-          }
-        },
-        {
-          "name": "Le Voile",
-          "logo": {
-            "local": "assets/brands/levolie.png",
-            "alt": "Le Voile"
+            "local": "assets/brands/townteam.png",
+            "alt": "Town Team"
           }
         },
         {
@@ -559,10 +524,47 @@
           }
         },
         {
-          "name": "Town Team",
+          "name": "Abo El Seed",
           "logo": {
-            "local": "assets/brands/townteam.png",
-            "alt": "Town Team"
+            "local": "assets/brands/aboelseed.png",
+            "alt": "Abo El Seed"
+          }
+        },
+        {
+          "name": "Abu Auf",
+          "logo": {
+            "local": "assets/brands/abuauf.png",
+            "alt": "Abu Auf"
+          }
+        },
+
+        {
+          "name": "Al Gabry",
+          "logo": {
+            "local": "assets/brands/algabry.png",
+            "alt": "Al Gabry"
+          }
+        },
+        {
+          "name": "Auto Samir Rayan",
+          "logo": {
+            "local": "assets/brands/autp.png",
+            "alt": "Auto Samir Rayan"
+          }
+        },
+
+        {
+          "name": "Haj Arafa",
+          "logo": {
+            "local": "assets/brands/hajArafa.png",
+            "alt": "Haj Arafa"
+          }
+        },
+        {
+          "name": "Le Voile",
+          "logo": {
+            "local": "assets/brands/levolie.png",
+            "alt": "Le Voile"
           }
         }
       ]
